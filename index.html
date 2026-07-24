@@ -79,12 +79,21 @@ body{background:#fff;padding:20px;min-height:100vh;color:#000}
 
 <div id="panel-byCompany" class="panel"><div class="search-bar">
 <div id="companySearchContainer" style="position:relative;flex:1;min-width:180px">
-  <div id="msInput" style="display:flex;flex-wrap:wrap;gap:4px;padding:6px 10px;border:1px solid #d0d0d0;border-radius:8px;min-height:40px;align-items:center;background:#fff;cursor:text;transition:border-color .2s" onclick="document.getElementById('companySearchInput').focus();showCompanyDropdown()">
-    <div id="companyTags" style="display:flex;flex-wrap:wrap;gap:4px"></div>
-    <input type="text" id="companySearchInput" placeholder="搜索或选择公司..." style="border:none;outline:none;flex:1;min-width:100px;font-size:13px;padding:3px 0;background:transparent" oninput="filterCompanyDropdown()" onfocus="showCompanyDropdown()">
-    <span id="msArrow" style="font-size:10px;color:#999;cursor:pointer;flex-shrink:0;padding:0 2px" onclick="event.stopPropagation();toggleCompanyDropdown()">&#9660;</span>
+  <div id="msDropdownTrigger" style="display:flex;align-items:center;gap:6px;padding:8px 14px;border:1px solid #d0d0d0;border-radius:8px;min-height:42px;background:#fff;cursor:pointer;transition:border-color .2s;font-size:13px;color:#333" onclick="event.stopPropagation();toggleCompanyDropdown()">
+    <span id="msSelectionText" style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#999">搜索或选择公司...</span>
+    <span id="msBadge" style="display:none;background:#fff5cc;color:#000;padding:1px 8px;border-radius:10px;font-size:11px;font-weight:bold;border:1px solid #e6daa0"></span>
+    <span id="msArrow" style="font-size:10px;color:#999;transition:transform .2s">&#9660;</span>
   </div>
-  <div id="companyDropdown" style="display:none;position:absolute;top:calc(100%+4px);left:0;right:0;max-height:280px;overflow-y:auto;border:1px solid #e0e0e0;border-radius:8px;background:#fff;z-index:1000;box-shadow:0 8px 24px rgba(0,0,0,0.12);font-size:13px"></div>
+  <div id="companyDropdown" style="display:none;position:absolute;top:calc(100%+4px);left:0;right:0;max-height:300px;overflow:hidden;border:1px solid #e0e0e0;border-radius:8px;background:#fff;z-index:1000;box-shadow:0 8px 24px rgba(0,0,0,0.12)">
+    <div style="padding:8px 10px;border-bottom:1px solid #eee;background:#fafafa">
+      <input type="text" id="msSearchInput" placeholder="搜索公司名称..." style="width:100%;border:1px solid #e0e0e0;border-radius:6px;padding:8px 10px;font-size:13px;outline:none" oninput="filterMsDropdown()">
+    </div>
+    <div style="padding:4px 8px;display:flex;gap:8px;font-size:11px;border-bottom:1px solid #eee">
+      <span class="clickable" onclick="selectAllMs(true)" style="color:#305496">全选</span>
+      <span class="clickable" onclick="selectAllMs(false)" style="color:#999">清空</span>
+    </div>
+    <div id="msDropdownList" style="max-height:200px;overflow-y:auto;font-size:13px"></div>
+  </div>
 </div>
 <div id="cityFilterGroup" style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;font-size:12px;margin-top:4px"></div>
 <div id="natureFilterGroup" style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;font-size:12px"></div>
@@ -190,52 +199,42 @@ function renderCompanyPanel(){const cs=[...new Set(D.companies.map(c=>c.city))];
   // Nature checkboxes
   const ng=document.getElementById('natureFilterGroup');
   ng.innerHTML='<span style="color:#666">纳税人:</span><label><input type="checkbox" class="natureCb" value="" checked onchange="toggleNatureAll()"> 全部</label><label><input type="checkbox" class="natureCb" value="小规模" checked onchange="onNatureChange()"> 小规模</label><label><input type="checkbox" class="natureCb" value="一般" checked onchange="onNatureChange()"> 一般纳税人</label>';
-  // Company tag-input multi-select
-  window._selectedCompanies = new Set(D.companies.map(c=>c.name));
-  buildCompanyTags();renderCompany();}
-function buildCompanyTags(){
-  const container=document.getElementById('companyTags');
-  container.innerHTML='';
-  window._selectedCompanies.forEach(name=>{
-    container.innerHTML+=`<span style="display:inline-flex;align-items:center;gap:3px;padding:2px 8px 2px 10px;background:#fff5cc;border:1px solid #e6daa0;border-radius:6px;font-size:12px;line-height:1.6">${name}<span style="cursor:pointer;font-size:16px;line-height:1;color:#999;margin-left:2px;border-radius:50%;width:18px;height:18px;display:inline-flex;align-items:center;justify-content:center" onmouseover="this.style.color='#c00';this.style.background='#f0f0f0'" onmouseout="this.style.color='#999';this.style.background='transparent'" onclick="event.stopPropagation();removeCompanyTag('${name.replace(/'/g,"\\'")}')">&times;</span></span>`;
-  });
-  renderCompany();}
+  // Company dropdown multi-select
+  window._selectedCompanies = new Set();
+  updateMsTrigger();renderCompany();}
+function updateMsTrigger(){
+  const n=window._selectedCompanies.size;
+  const text=document.getElementById('msSelectionText');
+  const badge=document.getElementById('msBadge');
+  if(n===0){text.textContent='搜索或选择公司...';text.style.color='#999';badge.style.display='none';}
+  else{text.textContent=n+' 家公司已选';text.style.color='#333';badge.textContent=n;badge.style.display='inline-block';}
+}
 function toggleCompanyDropdown(){
   const d=document.getElementById('companyDropdown');
-  if(d.style.display==='block'){hideCompanyDropdown();}else{showCompanyDropdown();}}
-function showCompanyDropdown(){
-  const d=document.getElementById('companyDropdown');const q=document.getElementById('companySearchInput').value;
-  renderCompanyDropdown(q);d.style.display='block';}
-function hideCompanyDropdown(){
-  document.getElementById('companyDropdown').style.display='none';
-  document.getElementById('msInput').style.borderColor='#d0d0d0';}
-function filterCompanyDropdown(){
-  const q=document.getElementById('companySearchInput').value.toLowerCase();
-  renderCompanyDropdown(q);}
-function renderCompanyDropdown(q){
-  const d=document.getElementById('companyDropdown');const ms=document.getElementById('msInput');
-  ms.style.borderColor='#305496';
+  const arrow=document.getElementById('msArrow');
+  if(d.style.display==='block'){d.style.display='none';arrow.style.transform='rotate(0deg)';}
+  else{d.style.display='block';arrow.style.transform='rotate(180deg)';renderMsDropdown();document.getElementById('msSearchInput').focus();}}
+function filterMsDropdown(){renderMsDropdown();}
+function renderMsDropdown(){
+  const q=(document.getElementById('msSearchInput').value||'').toLowerCase();
   const list=D.companies.filter(c=>!q||c.name.toLowerCase().includes(q));
-  let h='<div style="padding:8px 12px;background:#fafafa;font-size:12px;color:#888;border-bottom:1px solid #eee;display:flex;justify-content:space-between"><span>已选 <b>'+window._selectedCompanies.size+'</b> 家</span><span>共 '+list.length+' 家</span></div>';
-  if(list.length===0){h+='<div style="padding:20px;text-align:center;color:#bbb">无匹配公司</div>';d.innerHTML=h;d.style.display='block';return;}
-  list.slice(0,80).forEach(c=>{
+  const d=document.getElementById('msDropdownList');
+  let h='';list.slice(0,100).forEach(c=>{
     const sel=window._selectedCompanies.has(c.name);
     h+=`<label style="display:flex;padding:7px 12px;cursor:pointer;border-bottom:1px solid #f5f5f5;align-items:center;gap:8px;transition:background .15s" onmouseover="this.style.background='#fffbe6'" onmouseout="this.style.background=''">
-      <input type="checkbox" ${sel?'checked':''} onchange="toggleCompanySel('${c.name.replace(/'/g,"\\'")}')" style="width:16px;height:16px;accent-color:#305496;cursor:pointer;flex-shrink:0">
-      <span style="flex:1;font-size:13px;color:#333">${c.name}</span>
-      <span style="color:#999;font-size:11px;background:#f5f5f5;padding:1px 8px;border-radius:4px">${c.city}</span>
-    </label>`;
+      <input type="checkbox" ${sel?'checked':''} onchange="toggleMsCompany('${c.name.replace(/'/g,"\\'")}')" style="width:16px;height:16px;cursor:pointer;flex-shrink:0;accent-color:#305496">
+      <span style="flex:1;color:#333">${c.name}</span><span style="color:#999;font-size:11px;background:#f5f5f5;padding:1px 8px;border-radius:4px">${c.city}</span></label>`;
   });
-  if(list.length>80)h+=`<div style="padding:8px 12px;text-align:center;color:#999;font-size:12px">... 仅显示前80家</div>`;
-  d.innerHTML=h;d.style.display='block';}
-function toggleCompanySel(name){
-  if(window._selectedCompanies.has(name)){window._selectedCompanies.delete(name);}
-  else{window._selectedCompanies.add(name);}
-  buildCompanyTags();}
-// Click outside to close
-document.addEventListener('click',function(e){
-  const container=document.getElementById('companySearchContainer');
-  if(container&&!container.contains(e.target))hideCompanyDropdown();});
+  d.innerHTML=h||'<div style="padding:20px;text-align:center;color:#bbb">无匹配公司</div>';}
+function toggleMsCompany(name){
+  if(window._selectedCompanies.has(name))window._selectedCompanies.delete(name);
+  else window._selectedCompanies.add(name);
+  updateMsTrigger();renderCompany();renderMsDropdown();}
+function selectAllMs(all){document.querySelectorAll('#msDropdownList input[type=checkbox]').forEach(cb=>{
+  const n=cb.closest('label').querySelector('span').textContent;if(all)window._selectedCompanies.add(n);else window._selectedCompanies.delete(n);
+});updateMsTrigger();renderCompany();renderMsDropdown();}
+document.addEventListener('click',function(e){const c=document.getElementById('companySearchContainer');
+  if(c&&!c.contains(e.target)){document.getElementById('companyDropdown').style.display='none';document.getElementById('msArrow').style.transform='rotate(0deg)';}});
 function getSelectedCompanies(){return Array.from(window._selectedCompanies);}
 function onCityChange(){const all=document.querySelector('.cityCb[value=""]');const others=document.querySelectorAll('.cityCb:not([value=""])');
   all.checked=Array.from(others).every(cb=>cb.checked);renderCompany();}
