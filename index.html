@@ -78,37 +78,23 @@ body{background:#fff;padding:20px;min-height:100vh;color:#000}
 <div class="chart-card" id="cityCompanyCard" style="display:none"><h3 id="cityCompanyTitle"></h3><div id="cityCompanyTable"></div></div></div>
 
 <div id="panel-byCompany" class="panel"><div class="search-bar">
-<div id="companySearchContainer" style="position:relative;flex:1;min-width:180px">
+<div id="companySearchContainer" style="position:relative;flex:1;min-width:200px">
   <div id="msDropdownTrigger" style="display:flex;align-items:center;gap:6px;padding:8px 14px;border:1px solid #d0d0d0;border-radius:8px;min-height:42px;background:#fff;cursor:pointer;transition:border-color .2s;font-size:13px;color:#333" onclick="event.stopPropagation();toggleCompanyDropdown()">
-    <span id="msSelectionText" style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#999">筛选公司、城市、性质...</span>
+    <span id="msSelectionText" style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#999">选择公司...</span>
     <span id="msBadge" style="display:none;background:#fff5cc;color:#000;padding:1px 8px;border-radius:10px;font-size:11px;font-weight:bold;border:1px solid #e6daa0"></span>
     <span id="msArrow" style="font-size:10px;color:#999;transition:transform .2s">&#9660;</span>
   </div>
-  <div id="companyDropdown" style="display:none;position:absolute;top:calc(100%+4px);left:0;right:0;width:420px;max-height:450px;overflow:hidden;border:1px solid #e0e0e0;border-radius:8px;background:#fff;z-index:1000;box-shadow:0 8px 24px rgba(0,0,0,0.12)">
-    <div style="padding:8px 10px;border-bottom:1px solid #eee;background:#fafafa">
-      <input type="text" id="msSearchInput" placeholder="搜索公司名称..." style="width:100%;border:1px solid #e0e0e0;border-radius:6px;padding:8px 10px;font-size:13px;outline:none" oninput="filterMsDropdown()">
-    </div>
-    <div style="display:flex;border-bottom:1px solid #eee">
-      <div style="flex:1;border-right:1px solid #eee;padding:6px 8px">
-        <div style="font-size:11px;color:#999;margin-bottom:4px;font-weight:bold">城市</div>
-        <div id="msCityList" style="max-height:140px;overflow-y:auto"></div>
-      </div>
-      <div style="flex:1;padding:6px 8px">
-        <div style="font-size:11px;color:#999;margin-bottom:4px;font-weight:bold">纳税人性质</div>
-        <div id="msNatureList"></div>
-      </div>
-    </div>
-    <div style="padding:4px 8px;display:flex;gap:8px;font-size:11px;border-bottom:1px solid #eee">
-      <span class="clickable" onclick="selectAllMs(true)" style="color:#305496">全选公司</span>
-      <span class="clickable" onclick="selectAllMs(false)" style="color:#999">清空公司</span>
-      <span style="color:#ccc">|</span>
-      <select id="sortBy" onchange="renderCompany()" style="border:none;font-size:11px;outline:none;cursor:pointer;color:#555">
-        <option value="income">按收入排序</option><option value="rate">按税负率排序</option><option value="name">按名称排序</option>
-      </select>
-    </div>
-    <div id="msDropdownList" style="max-height:160px;overflow-y:auto;font-size:13px"></div>
+  <div id="companyDropdown" style="display:none;position:absolute;top:calc(100%+4px);left:0;width:360px;max-height:380px;overflow:hidden;border:1px solid #e0e0e0;border-radius:8px;background:#fff;z-index:1000;box-shadow:0 8px 24px rgba(0,0,0,0.12)">
+    <div style="padding:8px 10px;border-bottom:1px solid #eee"><input type="text" id="msSearchInput" placeholder="搜索公司名称..." style="width:100%;border:1px solid #e0e0e0;border-radius:6px;padding:8px 10px;font-size:13px;outline:none" oninput="filterMsDropdown()"></div>
+    <div style="padding:4px 8px;display:flex;gap:8px;font-size:11px;border-bottom:1px solid #eee"><span class="clickable" onclick="selectAllMs(true)">全选</span><span class="clickable" onclick="selectAllMs(false)" style="color:#999">清空</span></div>
+    <div id="msDropdownList" style="max-height:260px;overflow-y:auto;font-size:13px"></div>
   </div>
-</div></div>
+</div>
+<div id="ddCity" style="position:relative;min-width:130px"></div>
+<div id="ddNature" style="position:relative;min-width:130px"></div>
+<select id="sortBy" onchange="renderCompany()" style="padding:8px 14px;border:1px solid #d0d0d0;border-radius:8px;font-size:13px;color:#333;background:#fff;min-height:42px;cursor:pointer;outline:none">
+  <option value="income">按收入</option><option value="rate">按税负</option><option value="name">按名称</option>
+</select></div>
 <div class="chart-card"><div id="companyTable"></div></div></div>
 
 <div id="panel-small" class="panel"><div class="kpi-row" id="smallKpiRow"></div>
@@ -200,28 +186,33 @@ function showCityCompanies(city){
 function renderCompanyPanel(){
   window._cityFilter=new Set(); window._natureFilter=new Set();
   window._selectedCompanies = new Set();
+  buildDropdown('ddCity','城市',['上海','北京','南京','广州','成都','杭州','武汉','深圳']);
+  buildDropdown('ddNature','性质',['小规模','一般']);
   updateMsTrigger();renderCompany();}
+function buildDropdown(containerId, title, options){
+  const c=document.getElementById(containerId);
+  let h='<div id="'+containerId+'Trigger" style="display:flex;align-items:center;gap:6px;padding:8px 14px;border:1px solid #d0d0d0;border-radius:8px;min-height:42px;background:#fff;cursor:pointer;font-size:13px;color:#333" onclick="event.stopPropagation();toggleDd(\''+containerId+'\')">';
+  h+='<span id="'+containerId+'Text" style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+title+'</span>';
+  h+='<span id="'+containerId+'Arrow" style="font-size:10px;color:#999;transition:transform .2s">&#9660;</span></div>';
+  h+='<div id="'+containerId+'Dropdown" style="display:none;position:absolute;top:calc(100%+4px);left:0;min-width:140px;max-height:240px;overflow-y:auto;border:1px solid #e0e0e0;border-radius:8px;background:#fff;z-index:1000;box-shadow:0 8px 24px rgba(0,0,0,0.12);font-size:13px">';
+  options.forEach(o=>{const id=containerId==='ddCity'?'city':'nature';const set=id==='city'?window._cityFilter:window._natureFilter;const label=id==='nature'?(o==='小规模'?'小规模':'一般纳税人'):o;
+    h+='<label style="display:flex;padding:7px 14px;cursor:pointer;border-bottom:1px solid #f5f5f5;align-items:center;gap:8px" onmouseover="this.style.background=\'#fffbe6\'" onmouseout="this.style.background=\'\'">';
+    h+='<input type="checkbox" '+(set.has(o)?'checked':'')+' onchange="toggleDdOption(\''+id+'\',\''+o+'\',\''+title+'\')" style="width:16px;height:16px;cursor:pointer;flex-shrink:0;accent-color:#305496">'+label+'</label>';});
+  h+='</div>';c.innerHTML=h;}
+function toggleDd(id){const d=document.getElementById(id+'Dropdown'),a=document.getElementById(id+'Arrow');
+  const v=d.style.display==='block';d.style.display=v?'none':'block';a.style.transform=v?'rotate(0deg)':'rotate(180deg)';}
+function toggleDdOption(id,value,title){
+  const set=id==='city'?window._cityFilter:window._natureFilter;
+  if(set.has(value))set.delete(value);else set.add(value);
+  const text=document.getElementById((id==='city'?'ddCity':'ddNature')+'Text');
+  text.textContent=set.size===0?title:set.size+'项';
+  renderCompany();}
 function updateMsTrigger(){
-  const n=window._selectedCompanies.size, nc=window._cityFilter.size, nn=window._natureFilter.size;
-  const text=document.getElementById('msSelectionText');const badge=document.getElementById('msBadge');
-  let parts=[];if(n>0)parts.push(n+'司');if(nc>0)parts.push(nc+'城');if(nn>0)parts.push(nn+'性');
-  if(parts.length===0){text.textContent='筛选公司、城市、性质...';text.style.color='#999';badge.style.display='none';}
-  else{text.textContent=parts.join('·')+'已选';text.style.color='#333';badge.textContent=n+nc+nn;badge.style.display='inline-block';}}
+  const n=window._selectedCompanies.size;const text=document.getElementById('msSelectionText');const badge=document.getElementById('msBadge');
+  if(n===0){text.textContent='选择公司...';text.style.color='#999';badge.style.display='none';}
+  else{text.textContent=n+'家公司';text.style.color='#333';badge.textContent=n;badge.style.display='inline-block';}}
 function toggleCompanyDropdown(){
   const d=document.getElementById('companyDropdown'),arrow=document.getElementById('msArrow');
-  if(d.style.display==='block'){d.style.display='none';arrow.style.transform='rotate(0deg)';}
-  else{d.style.display='block';arrow.style.transform='rotate(180deg)';renderCityNatureList();renderMsDropdown();document.getElementById('msSearchInput').focus();}}
-function renderCityNatureList(){
-  const cities=['上海','北京','南京','广州','成都','杭州','武汉','深圳'];
-  let ch='';cities.forEach(c=>{const sel=window._cityFilter.has(c);
-    ch+=`<label style="display:flex;padding:3px 0;cursor:pointer;align-items:center;gap:6px;font-size:12px"><input type="checkbox" ${sel?'checked':''} onchange="toggleMsCity('${c}')" style="width:14px;height:14px;cursor:pointer;flex-shrink:0;accent-color:#305496">${c}</label>`;});
-  document.getElementById('msCityList').innerHTML=ch;
-  const natures=['小规模','一般'];
-  let nh='';natures.forEach(n=>{const sel=window._natureFilter.has(n);
-    nh+=`<label style="display:flex;padding:3px 0;cursor:pointer;align-items:center;gap:6px;font-size:12px"><input type="checkbox" ${sel?'checked':''} onchange="toggleMsNature('${n}')" style="width:14px;height:14px;cursor:pointer;flex-shrink:0;accent-color:#305496">${n==='小规模'?'小规模':'一般纳税人'}</label>`;});
-  document.getElementById('msNatureList').innerHTML=nh;}
-function toggleMsCity(city){if(window._cityFilter.has(city))window._cityFilter.delete(city);else window._cityFilter.add(city);updateMsTrigger();renderCompany();renderCityNatureList();}
-function toggleMsNature(n){if(window._natureFilter.has(n))window._natureFilter.delete(n);else window._natureFilter.add(n);updateMsTrigger();renderCompany();renderCityNatureList();}
 function filterMsDropdown(){renderMsDropdown();}
 function renderMsDropdown(){
   const q=(document.getElementById('msSearchInput').value||'').toLowerCase();
@@ -241,8 +232,13 @@ function toggleMsCompany(name){
 function selectAllMs(all){document.querySelectorAll('#msDropdownList input[type=checkbox]').forEach(cb=>{
   const n=cb.closest('label').querySelector('span').textContent;if(all)window._selectedCompanies.add(n);else window._selectedCompanies.delete(n);
 });updateMsTrigger();renderCompany();renderMsDropdown();}
-document.addEventListener('click',function(e){const c=document.getElementById('companySearchContainer');
-  if(c&&!c.contains(e.target)){document.getElementById('companyDropdown').style.display='none';document.getElementById('msArrow').style.transform='rotate(0deg)';}});
+document.addEventListener('click',function(e){
+  closeDd(e,'companySearchContainer','companyDropdown','msArrow');
+  closeDd(e,'ddCity','ddCityDropdown','ddCityArrow');
+  closeDd(e,'ddNature','ddNatureDropdown','ddNatureArrow');});
+function closeDd(e,containerId,dropdownId,arrowId){
+  const c=document.getElementById(containerId);if(c&&!c.contains(e.target)){
+    document.getElementById(dropdownId).style.display='none';document.getElementById(arrowId).style.transform='rotate(0deg)';}}
 function getSelectedCompanies(){return Array.from(window._selectedCompanies);}
 function renderCompany(){
   const cityVals=getCityFilter();const nfVals=getNatureFilter();
