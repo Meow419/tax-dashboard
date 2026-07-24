@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年税费分析看板</title>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Microsoft YaHei','宋体',sans-serif}
+body{background:#f0f2f5;padding:20px}
+.header{background:linear-gradient(135deg,#305496,#4a7bc7);color:#fff;padding:24px 32px;border-radius:12px;margin-bottom:20px}
+.header h1{font-size:24px;font-weight:bold}
+.header p{font-size:14px;opacity:0.85;margin-top:6px}
+.kpi-row{display:flex;gap:16px;margin-bottom:20px}
+.kpi-card{flex:1;background:#fff;border-radius:10px;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+.kpi-card .label{font-size:13px;color:#888;margin-bottom:4px}
+.kpi-card .value{font-size:28px;font-weight:bold;color:#305496}
+.kpi-card .sub{font-size:12px;color:#999;margin-top:2px}
+.chart-row{display:flex;gap:16px;margin-bottom:20px}
+.chart-card{flex:1;background:#fff;border-radius:10px;padding:16px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+.chart-card h3{font-size:15px;color:#333;margin-bottom:12px;padding-left:8px;border-left:3px solid #305496}
+.chart-box{width:100%;height:320px}
+.alert-section{background:#fff;border-radius:10px;padding:16px;box-shadow:0 2px 8px rgba(0,0,0,0.06);margin-bottom:20px}
+.alert-section h3{font-size:15px;color:#333;margin-bottom:12px;padding-left:8px;border-left:3px solid #e74c3c}
+.alert-item{display:flex;justify-content:space-between;padding:8px 12px;border-bottom:1px solid #f0f0f0;font-size:13px}
+.alert-item:last-child{border-bottom:none}
+.alert-item .name{color:#333;font-weight:bold}
+.alert-item .count{color:#e74c3c}
+.alert-item .detail{color:#666;font-size:12px}
+.footer{text-align:center;color:#999;font-size:12px;padding:20px}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>2026年税费分析看板</h1>
+  <p>数据来源：2026年税费统计分析表 | 单位：万元 | 更新日期：2026-07-23</p>
+</div>
+
+<div class="kpi-row" id="kpiRow"></div>
+
+<div class="chart-row">
+  <div class="chart-card">
+    <h3>月度收入趋势（万元）</h3>
+    <div class="chart-box" id="chartTrend"></div>
+  </div>
+  <div class="chart-card">
+    <h3>各城市税费对比（万元）</h3>
+    <div class="chart-box" id="chartCity"></div>
+  </div>
+</div>
+
+<div class="chart-row">
+  <div class="chart-card">
+    <h3>各城市税负率（%）</h3>
+    <div class="chart-box" id="chartRate"></div>
+  </div>
+  <div class="chart-card">
+    <h3>月度增值税趋势（万元）</h3>
+    <div class="chart-box" id="chartVat"></div>
+  </div>
+</div>
+
+<div class="alert-section">
+  <h3>增值税预警提醒</h3>
+  <div id="alertList"></div>
+</div>
+
+<div class="footer">自动生成 | 数据如有变动请重新导出</div>
+
+<script>
+async function loadData(){
+  const resp = await fetch('data.json');
+  return await resp.json();
+}
+
+async function init(){
+  const data = await loadData();
+  const gt = data.grand_total;
+  
+  // KPI
+  document.getElementById('kpiRow').innerHTML = [
+    {label:'全年总收入', value:gt.income + '万', sub:'约'+(gt.income/10000).toFixed(2)+'亿元'},
+    {label:'税费合计', value:gt.tax + '万', sub:''},
+    {label:'综合税负率', value:gt.rate + '%', sub:''},
+    {label:'监控城市', value:data.cities.length+'个', sub:''}
+  ].map(k => `<div class="kpi-card"><div class="label">${k.label}</div><div class="value">${k.value}</div><div class="sub">${k.sub}</div></div>`).join('');
+
+  const months = ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'];
+  const inc26 = months.map(m => data.monthly[m] ? data.monthly[m].inc26 : 0);
+  const inc25 = months.map(m => data.monthly[m] ? data.monthly[m].inc25 : 0);
+  const vat26 = months.map(m => data.monthly[m] ? data.monthly[m].vat26 : 0);
+
+  // Trend
+  echarts.init(document.getElementById('chartTrend')).setOption({
+    tooltip:{trigger:'axis'},
+    legend:{data:['2026收入','2025收入']},
+    grid:{left:'8%',right:'4%',bottom:'12%'},
+    xAxis:{type:'category',data:months},
+    yAxis:{type:'value',name:'万元'},
+    series:[
+      {name:'2026收入',type:'bar',data:inc26,itemStyle:{color:'#305496'}},
+      {name:'2025收入',type:'line',data:inc25,lineStyle:{color:'#e67e22'},itemStyle:{color:'#e67e22'}}
+    ]
+  });
+
+  // City comparison
+  const cityNames = data.cities.map(c => c.name);
+  const cityIncome = data.cities.map(c => c.income);
+  const cityTax = data.cities.map(c => c.total_tax);
+  
+  echarts.init(document.getElementById('chartCity')).setOption({
+    tooltip:{trigger:'axis'},
+    legend:{data:['收入','税费']},
+    grid:{left:'8%',right:'4%',bottom:'12%'},
+    xAxis:{type:'category',data:cityNames,axisLabel:{rotate:30}},
+    yAxis:{type:'value',name:'万元'},
+    series:[
+      {name:'收入',type:'bar',data:cityIncome,itemStyle:{color:'#305496'}},
+      {name:'税费',type:'bar',data:cityTax,itemStyle:{color:'#e74c3c'}}
+    ]
+  });
+
+  // Tax burden rate
+  echarts.init(document.getElementById('chartRate')).setOption({
+    tooltip:{trigger:'axis',formatter:p=>`${p[0].name}<br/>增值税税负：${p[0].value}%<br/>综合税负：${p[1].value}%`},
+    legend:{data:['增值税税负','综合税负']},
+    grid:{left:'8%',right:'4%',bottom:'12%'},
+    xAxis:{type:'category',data:cityNames,axisLabel:{rotate:30}},
+    yAxis:{type:'value',name:'%'},
+    series:[
+      {name:'增值税税负',type:'bar',data:data.cities.map(c=>c.vat_rate),itemStyle:{color:'#3498db'}},
+      {name:'综合税负',type:'bar',data:data.cities.map(c=>c.total_rate),itemStyle:{color:'#e74c3c'}}
+    ]
+  });
+
+  // VAT trend
+  echarts.init(document.getElementById('chartVat')).setOption({
+    tooltip:{trigger:'axis'},
+    grid:{left:'8%',right:'4%',bottom:'12%'},
+    xAxis:{type:'category',data:months},
+    yAxis:{type:'value',name:'万元'},
+    series:[{name:'增值税',type:'line',data:vat26,lineStyle:{color:'#27ae60',width:3},areaStyle:{color:'rgba(39,174,96,0.15)'},itemStyle:{color:'#27ae60'}}]
+  });
+
+  // Alerts
+  const alertHtml = Object.entries(data.alerts).map(([name,info]) => 
+    `<div class="alert-item"><span><span class="name">${name}</span> <span class="detail">${info.details.join('; ')}</span></span><span class="count">${info.count}次预警</span></div>`
+  ).join('');
+  document.getElementById('alertList').innerHTML = alertHtml || '<div style="color:#999;padding:12px">暂无预警</div>';
+}
+
+init();
+</script>
+</body>
+</html>
