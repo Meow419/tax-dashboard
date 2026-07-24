@@ -78,17 +78,15 @@ body{background:#fff;padding:20px;min-height:100vh;color:#000}
 <div class="chart-card" id="cityCompanyCard" style="display:none"><h3 id="cityCompanyTitle"></h3><div id="cityCompanyTable"></div></div></div>
 
 <div id="panel-byCompany" class="panel"><div class="search-bar">
-<input type="text" id="companySearch" placeholder="搜索公司..." oninput="renderCompany()">
-<div id="cityFilterGroup" style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;font-size:12px">
-  <span style="color:#666">城市:</span>
-  <label><input type="checkbox" class="cityCb" value="" checked onchange="toggleCityAll()"> 全部</label>
+<input type="text" id="companySearch" placeholder="搜索公司名称..." oninput="filterCompanyList()">
+<div style="display:flex;gap:4px;flex-wrap:wrap;align-items:center;font-size:12px">
+  <span style="color:#666;font-size:12px">已选 <span id="selectedCount">0</span> 家</span>
+  <span class="clickable" onclick="clearCompanySel()" style="font-size:11px">清除</span>
+  <span class="clickable" onclick="selectAllCompany()" style="font-size:11px">全选</span>
 </div>
-<div id="natureFilterGroup" style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;font-size:12px">
-  <span style="color:#666">纳税人:</span>
-  <label><input type="checkbox" class="natureCb" value="" checked onchange="toggleNatureAll()"> 全部</label>
-  <label><input type="checkbox" class="natureCb" value="小规模" checked onchange="onNatureChange()"> 小规模</label>
-  <label><input type="checkbox" class="natureCb" value="一般" checked onchange="onNatureChange()"> 一般纳税人</label>
-</div>
+<div id="companyCheckboxList" style="max-height:120px;overflow-y:auto;border:1px solid #ddd;border-radius:6px;padding:4px;display:flex;flex-wrap:wrap;gap:2px;font-size:12px;background:#fff"></div>
+<div id="cityFilterGroup" style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;font-size:12px;margin-top:4px"></div>
+<div id="natureFilterGroup" style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;font-size:12px"></div>
 <select id="sortBy" onchange="renderCompany()"><option value="income">按收入排序</option><option value="rate">按税负率</option><option value="name">按名称</option></select></div>
 <div class="chart-card"><div id="companyTable"></div></div></div>
 
@@ -183,19 +181,39 @@ function showCityCompanies(city){
 
 // ====== 按公司 ======
 function renderCompanyPanel(){const cs=[...new Set(D.companies.map(c=>c.city))];
+  // City checkboxes
   const g=document.getElementById('cityFilterGroup');
-  let h='<span style="color:#666">城市:</span><label><input type="checkbox" class="cityCb" value="" checked onchange="toggleCityAll()"> 全部</label>';
-  cs.forEach(c=>{h+=`<label><input type="checkbox" class="cityCb" value="${c}" checked onchange="onCityChange()"> ${c}</label>`;});
-  g.innerHTML=h;renderCompany();}
+  let gh='<span style="color:#666">城市:</span><label><input type="checkbox" class="cityCb" value="" checked onchange="toggleCityAll()"> 全部</label>';
+  cs.forEach(c=>{gh+=`<label><input type="checkbox" class="cityCb" value="${c}" checked onchange="onCityChange()"> ${c}</label>`;});
+  g.innerHTML=gh;
+  // Nature checkboxes
+  const ng=document.getElementById('natureFilterGroup');
+  ng.innerHTML='<span style="color:#666">纳税人:</span><label><input type="checkbox" class="natureCb" value="" checked onchange="toggleNatureAll()"> 全部</label><label><input type="checkbox" class="natureCb" value="小规模" checked onchange="onNatureChange()"> 小规模</label><label><input type="checkbox" class="natureCb" value="一般" checked onchange="onNatureChange()"> 一般纳税人</label>';
+  // Company checkboxes
+  buildCompanyCheckboxes();renderCompany();}
+function buildCompanyCheckboxes(){
+  const q=(document.getElementById('companySearch').value||'').toLowerCase();
+  const list=D.companies.filter(c=>!q||c.name.toLowerCase().includes(q));
+  let h='';list.forEach(c=>{h+=`<label style="padding:1px 3px;white-space:nowrap"><input type="checkbox" class="coCb" value="${c.name}" checked onchange="onCompanyChange()"> ${c.name}</label>`;});
+  document.getElementById('companyCheckboxList').innerHTML=h;
+  updateSelectedCount();}
+function filterCompanyList(){buildCompanyCheckboxes();renderCompany();}
+function onCompanyChange(){updateSelectedCount();renderCompany();}
+function updateSelectedCount(){const n=document.querySelectorAll('.coCb:checked').length;document.getElementById('selectedCount').textContent=n;}
+function clearCompanySel(){document.querySelectorAll('.coCb').forEach(cb=>cb.checked=false);onCompanyChange();}
+function selectAllCompany(){document.querySelectorAll('.coCb').forEach(cb=>cb.checked=true);onCompanyChange();}
+function getSelectedCompanies(){return Array.from(document.querySelectorAll('.coCb:checked')).map(cb=>cb.value);}
 function onCityChange(){const all=document.querySelector('.cityCb[value=""]');const others=document.querySelectorAll('.cityCb:not([value=""])');
   all.checked=Array.from(others).every(cb=>cb.checked);renderCompany();}
 function renderCompany(){
   const q=(document.getElementById('companySearch').value||'').toLowerCase();
   const cityVals=getCityFilter();const nfVals=getNatureFilter();
+  const coVals=getSelectedCompanies();
   const sf=document.getElementById('sortBy').value;
   let list=D.companies.filter(c=>{
     if(cityVals.length>0 && !cityVals.includes(c.city))return false;
-    if(q&&!c.name.toLowerCase().includes(q))return false;
+    if(coVals.length>0 && !coVals.includes(c.name))return false;
+    if(q && !c.name.toLowerCase().includes(q))return false;
     if(nfVals.length>0){const match=nfVals.some(v=>c.nature.includes(v));if(!match)return false;}
     return true;
   });
