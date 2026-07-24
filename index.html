@@ -201,12 +201,16 @@ function renderOverview(){
   const g = D.grand_total;
   document.getElementById('kpiRow').innerHTML = [
     {l:'全年总收入', v:g.income+'万', s:'约'+(g.income/10000).toFixed(2)+'亿元'},
+    {l:'增值税', v:g.vat+'万'},
+    {l:'附加税', v:g.surtax+'万'},
+    {l:'企业所得税', v:g.cit+'万'},
+    {l:'个税', v:g.iit+'万'},
+    {l:'印花税', v:g.stamp+'万'},
+    {l:'文建费', v:g.cultural+'万'},
     {l:'税费合计', v:g.tax+'万'},
     {l:'综合税负率', v:g.rate+'%'},
-    {l:'公司总数', v:D.companies.length+'家'},
-    {l:'小规模纳税人', v:D.small_taxpayer.small_count+'家'},
-    {l:'预警公司', v:Object.keys(D.alerts).length+'家'}
-  ].map(k=>`<div class="kpi-card"><div class="lbl">${k.l}</div><div class="val">${k.v}</div></div>`).join('');
+    {l:'公司总数', v:D.companies.length+'家'}
+  ].map(k=>`<div class="kpi-card"><div class="lbl">${k.l}</div><div class="val" style="font-size:20px">${k.v}</div><div class="sub">${k.s||''}</div></div>`).join('');
 
   const m = M.map(mm=>D.monthly[mm]||{inc26:0,inc25:0});
   echarts.init(document.getElementById('chartTrend')).setOption({
@@ -237,13 +241,15 @@ function renderOverview(){
 function renderCityPanel(){
   const cs = D.cities;
   document.getElementById('cityKpiRow').innerHTML = cs.map(c=>`<div class="kpi-card" style="cursor:pointer" onclick="showCityMonth('${c.name}')">
-    <div class="lbl">${c.name}</div><div class="val" style="font-size:18px">${c.income}万</div><div class="sub">税负${c.total_rate}%</div></div>`).join('');
-  let h = '<table class="data-table"><tr><th>城市</th><th>公司数</th><th>收入(万)</th><th>增值税(万)</th><th>税费合计(万)</th><th>增值税税负</th><th>综合税负率</th><th>操作</th></tr>';
+    <div class="lbl">${c.name}</div><div class="val" style="font-size:18px">${c.income}万</div><div class="sub">税费${c.total_tax}万 / 税负${c.total_rate}%</div></div>`).join('');
+  let h = '<table class="data-table"><tr><th>城市</th><th>公司数</th><th>收入(万)</th><th>增值税</th><th>附加税</th><th>企业所得税</th><th>个税</th><th>印花税</th><th>文建费</th><th>税费合计</th><th>增值税税负</th><th>综合税负率</th><th>操作</th></tr>';
   cs.forEach(c=>{
     const cnt = D.companies.filter(x=>x.city===c.name).length;
-    h += `<tr><td><b>${c.name}</b></td><td>${cnt}</td><td>${c.income.toFixed(2)}</td><td>${c.vat.toFixed(2)}</td><td>${c.total_tax.toFixed(2)}</td>
-      <td>${c.vat_rate.toFixed(4)}%</td><td>${c.total_rate.toFixed(4)}%</td>
-      <td><span class="clickable" onclick="showCityMonth('${c.name}')">月度趋势</span></td></tr>`;
+    h += `<tr><td><b>${c.name}</b></td><td>${cnt}</td><td>${c.income.toFixed(2)}</td>`;
+    h += `<td>${c.vat.toFixed(2)}</td><td>${c.surtax.toFixed(2)}</td><td>${c.cit.toFixed(2)}</td>`;
+    h += `<td>${c.iit.toFixed(2)}</td><td>${c.stamp.toFixed(2)}</td><td>${c.cultural.toFixed(2)}</td>`;
+    h += `<td>${c.total_tax.toFixed(2)}</td><td>${c.vat_rate.toFixed(4)}%</td><td>${c.total_rate.toFixed(4)}%</td>`;
+    h += `<td><span class="clickable" onclick="showCityMonth('${c.name}')">月度趋势</span></td></tr>`;
   });
   document.getElementById('cityTable').innerHTML = h;
   showCityMonth('上海');
@@ -339,12 +345,15 @@ function renderSmallPanel(){
 function renderSmallDetail(){
   const q = (document.getElementById('smallSearch').value||'').toLowerCase();
   const list = D.small_taxpayer.detail.filter(c=>!q||c.name.toLowerCase().includes(q));
-  let h = '<table class="data-table"><tr><th>公司名称</th><th>城市</th><th>收入(万)</th><th>增值税(万)</th><th>税费(万)</th><th>增值税税负</th><th>综合税负率</th><th>状态</th></tr>';
+  let h = '<table class="data-table"><tr><th>公司名称</th><th>城市</th><th>收入(万)</th><th>增值税(万)</th><th>税费(万)</th><th>滚动12月收入(万)</th><th>年化收入(万)</th><th>预警</th><th>状态</th></tr>';
   list.forEach(c=>{
-    const status = c.vat===0&&c.income>0?'!零增值税':c.total_rate<0.5?'偏低':c.total_rate>3?'偏高':'正常';
-    const cls = status.includes('零增值税')?'alert-row':'';
-    h += `<tr class="${cls}"><td>${c.name}</td><td>${c.city}</td><td>${c.income.toFixed(2)}</td><td>${c.vat.toFixed(2)}</td>
-      <td>${c.tax.toFixed(2)}</td><td>${c.vat_rate.toFixed(4)}%</td><td>${c.total_rate.toFixed(4)}%</td><td>${status}</td></tr>`;
+    const warnStyle = c.warn_500 ? 'style="background:#fee;font-weight:bold;color:#c00"' : '';
+    h += `<tr><td>${c.name}</td><td>${c.city}</td><td>${c.income.toFixed(2)}</td><td>${c.vat.toFixed(2)}</td>
+      <td>${c.tax.toFixed(2)}</td>
+      <td ${warnStyle}>${c.rolling_12m.toFixed(0)}</td>
+      <td>${c.annualized.toFixed(0)}</td>
+      <td>${c.warn_500?'!超500万':''}</td>
+      <td>${c.warn_text||'正常'}</td></tr>`;
   });
   document.getElementById('smallTable').innerHTML = h;
 }
