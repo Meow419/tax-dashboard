@@ -202,12 +202,16 @@ function buildCompanyTags(){
 function removeCompanyTag(name){window._selectedCompanies.delete(name);buildCompanyTags();}
 function onCompanySearchInput(){
   const q=document.getElementById('companySearchInput').value.toLowerCase();
+  showCompanyDropdown(q);}
+function showCompanyDropdown(q){
   const dropdown=document.getElementById('companyDropdown');
-  if(!q){dropdown.style.display='none';return;}
-  const matches=D.companies.filter(c=>c.name.toLowerCase().includes(q)&&!window._selectedCompanies.has(c.name));
-  if(matches.length===0){dropdown.style.display='none';return;}
-  let h='';matches.slice(0,30).forEach(c=>{
-    h+=`<div style="padding:6px 10px;cursor:pointer;border-bottom:1px solid #eee" onmouseover="this.style.background='#fff5cc'" onmouseout="this.style.background=''" onclick="selectCompanyFromDropdown('${c.name.replace(/'/g,"\\'")}')">${c.name} <span style="color:#999">${c.city}</span></div>`;
+  const query=(q||document.getElementById('companySearchInput').value||'').toLowerCase();
+  let matches=D.companies.filter(c=>c.name.toLowerCase().includes(query)&&!window._selectedCompanies.has(c.name));
+  if(query)matches=matches.filter(c=>c.name.toLowerCase().includes(query));
+  if(matches.length===0){dropdown.innerHTML='<div style="padding:8px;color:#999;text-align:center">无匹配</div>';dropdown.style.display='block';return;}
+  let h='<div style="padding:4px 8px;background:#f9f9f9;font-size:11px;color:#666;border-bottom:1px solid #eee">共'+matches.length+'家可添加</div>';
+  matches.slice(0,50).forEach(c=>{
+    h+=`<div style="padding:6px 10px;cursor:pointer;border-bottom:1px solid #eee;display:flex;justify-content:space-between" onmouseover="this.style.background='#fff5cc'" onmouseout="this.style.background=''" onclick="selectCompanyFromDropdown('${c.name.replace(/'/g,"\\'")}')"><span>${c.name}</span><span style="color:#999;font-size:11px">${c.city}</span></div>`;
   });
   dropdown.innerHTML=h;dropdown.style.display='block';}
 function selectCompanyFromDropdown(name){window._selectedCompanies.add(name);document.getElementById('companySearchInput').value='';document.getElementById('companyDropdown').style.display='none';buildCompanyTags();}
