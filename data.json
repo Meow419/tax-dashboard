@@ -1,4 +1,9 @@
 {
+  "grand_total": {
+    "income": 29970.47,
+    "tax": 838.2,
+    "rate": 2.7968
+  },
   "cities": [
     {
       "name": "上海",
@@ -65,11 +70,1502 @@
       "total_rate": 3.8172
     }
   ],
-  "grand_total": {
-    "income": 29970.47,
-    "tax": 838.2,
-    "rate": 2.7968
-  },
+  "companies": [
+    {
+      "name": "上海猩羡健身管理有限公司",
+      "city": "上海",
+      "income": 7266.19,
+      "vat": 203.06,
+      "total_tax": 224.27,
+      "vat_rate": 2.806,
+      "total_rate": 3.0992
+    },
+    {
+      "name": "上海猩盟健身管理有限公司",
+      "city": "上海",
+      "income": 3177.44,
+      "vat": 60.86,
+      "total_tax": 63.9,
+      "vat_rate": 1.9154,
+      "total_rate": 2.0111
+    },
+    {
+      "name": "上海木星健身管理有限公司",
+      "city": "上海",
+      "income": 182.94,
+      "vat": 4.28,
+      "total_tax": 4.5,
+      "vat_rate": 2.3414,
+      "total_rate": 2.4585
+    },
+    {
+      "name": "深圳市猩球裂变科技有限公司上海分公司",
+      "city": "上海",
+      "income": 52.93,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海联星健身管理有限公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海驿猩慕健身管理有限公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司闵行第一分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司徐汇第八分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司普陀分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司徐汇第九分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司长宁第六分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司浦东第三分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司静安第五分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司黄浦第六分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司徐汇第十一分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司浦东第十四分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司黄浦第九分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司普陀第四分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司虹口第二分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司静安第十一分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司黄浦第十分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司浦东第八分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司普陀第二分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司静安第六分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司虹口第四分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司黄浦第二分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司徐汇第一分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司静安第十二分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司静安第四分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司长宁第四分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司浦东第十分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司闵行第三分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司黄浦分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司浦东第六分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司静安第十分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司浦东第九分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司杨浦第一分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司徐汇第四分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司浦东第四分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司徐汇第十二分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司虹口第一分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司长宁第一分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司长宁第二分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司徐汇第十三分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司浦东第五分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司普陀第一分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司徐汇第十四分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司浦东第十一分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司黄浦第八分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司黄浦第十二分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司浦东第七分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司虹口第三分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司静安第三分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司杨浦第四分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司杨浦第三分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司长宁第三分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司静安第十三分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海猩羡健身管理有限公司黄浦第十四分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "上海木星健身管理有限公司静安分公司",
+      "city": "上海",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "北京猩羡健身管理有限公司",
+      "city": "北京",
+      "income": 4301.25,
+      "vat": 87.47,
+      "total_tax": 95.87,
+      "vat_rate": 2.0336,
+      "total_rate": 2.2288
+    },
+    {
+      "name": "北京圆星健身管理有限公司",
+      "city": "北京",
+      "income": 50.22,
+      "vat": 0.04,
+      "total_tax": 0.04,
+      "vat_rate": 0.076,
+      "total_rate": 0.0793
+    },
+    {
+      "name": "深圳市猩球裂变科技有限公司北京分公司",
+      "city": "北京",
+      "income": 20.02,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "北京猩羡健身管理有限公司朝阳第一分公司",
+      "city": "北京",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "北京猩羡健身管理有限公司西城第一分公司（已注销）",
+      "city": "北京",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "北京猩羡健身管理有限公司海淀第一分公司",
+      "city": "北京",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "北京猩羡健身管理有限公司东城第四分公司",
+      "city": "北京",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "北京猩羡健身管理有限公司西城第四分公司",
+      "city": "北京",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "北京猩羡健身管理有限公司西城第三分公司",
+      "city": "北京",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "北京猩羡健身管理有限公司西城第二分公司",
+      "city": "北京",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "北京猩羡健身管理有限公司东城第二分公司",
+      "city": "北京",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "北京猩羡健身管理有限公司朝阳第九分公司（已注销）",
+      "city": "北京",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "北京猩羡健身管理有限公司朝阳第六分公司",
+      "city": "北京",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "北京猩羡健身管理有限公司朝阳第七分公司",
+      "city": "北京",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "北京猩羡健身管理有限公司朝阳第三分公司",
+      "city": "北京",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "北京猩羡健身管理有限公司朝阳第四分公司",
+      "city": "北京",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "北京猩羡健身管理有限公司朝阳第五分公司",
+      "city": "北京",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "北京猩羡健身管理有限公司东城第六分公司",
+      "city": "北京",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "北京猩羡健身管理有限公司海淀第三分公司",
+      "city": "北京",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "北京猩羡健身管理有限公司丰台第二分公司",
+      "city": "北京",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "北京猩羡健身管理有限公司朝阳第十九分公司",
+      "city": "北京",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "北京猩羡健身管理有限公司海淀第五分公司",
+      "city": "北京",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "北京猩羡健身管理有限公司东城第五分公司",
+      "city": "北京",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "北京猩羡健身管理有限公司海淀第二分公司",
+      "city": "北京",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "北京猩羡健身管理有限公司朝阳第十分公司",
+      "city": "北京",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "北京猩羡健身管理有限公司东城第七分公司",
+      "city": "北京",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "北京猩羡健身管理有限公司海淀第四分公司",
+      "city": "北京",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "南京猩慕健身管理有限公司",
+      "city": "南京",
+      "income": 127.3,
+      "vat": 0.0,
+      "total_tax": 0.14,
+      "vat_rate": 0.0,
+      "total_rate": 0.1065
+    },
+    {
+      "name": "南京猩慕健身管理有限公司南京秦淮第二分公司",
+      "city": "南京",
+      "income": 67.79,
+      "vat": 0.68,
+      "total_tax": 0.72,
+      "vat_rate": 1.0,
+      "total_rate": 1.06
+    },
+    {
+      "name": "南京猩慕健身管理有限公司建邺第一分公司",
+      "city": "南京",
+      "income": 48.83,
+      "vat": 0.02,
+      "total_tax": 0.02,
+      "vat_rate": 0.0488,
+      "total_rate": 0.0505
+    },
+    {
+      "name": "南京猩慕健身管理有限公司南京江宁第一分公司",
+      "city": "南京",
+      "income": 14.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0253,
+      "total_rate": 0.0262
+    },
+    {
+      "name": "南京猩慕健身管理有限公司鼓楼第二分公司",
+      "city": "南京",
+      "income": 13.56,
+      "vat": 0.01,
+      "total_tax": 0.01,
+      "vat_rate": 0.0802,
+      "total_rate": 0.083
+    },
+    {
+      "name": "深圳市猩球裂变科技有限公司南京分公司",
+      "city": "南京",
+      "income": 0.12,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "广州市猩慕健身管理有限公司",
+      "city": "广州",
+      "income": 2099.26,
+      "vat": 39.13,
+      "total_tax": 42.22,
+      "vat_rate": 1.8642,
+      "total_rate": 2.0114
+    },
+    {
+      "name": "深圳市猩球裂变科技有限公司广州分公司",
+      "city": "广州",
+      "income": 11.7,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "广州市猩慕健身管理有限公司天河第一分公司",
+      "city": "广州",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "广州市猩慕健身管理有限公司天河第三分公司",
+      "city": "广州",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "广州市猩慕健身管理有限公司海珠第一分公司",
+      "city": "广州",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "广州市猩慕健身管理有限公司天河第二分公司",
+      "city": "广州",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "广州市猩慕健身管理有限公司天河第六分公司",
+      "city": "广州",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "广州市猩慕健身管理有限公司天河第七分公司",
+      "city": "广州",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "广州市猩慕健身管理有限公司越秀第二分公司",
+      "city": "广州",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "广州市猩慕健身管理有限公司越秀第一分公司",
+      "city": "广州",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "广州市猩慕健身管理有限公司天河第五分公司",
+      "city": "广州",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "广州市猩慕健身管理有限公司天河第四分公司",
+      "city": "广州",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "成都猩羡健身服务有限公司",
+      "city": "成都",
+      "income": 625.63,
+      "vat": 7.78,
+      "total_tax": 8.58,
+      "vat_rate": 1.2441,
+      "total_rate": 1.3722
+    },
+    {
+      "name": "成都猩羡健身服务有限公司高新第四分公司",
+      "city": "成都",
+      "income": 165.54,
+      "vat": 1.66,
+      "total_tax": 1.74,
+      "vat_rate": 1.0,
+      "total_rate": 1.049
+    },
+    {
+      "name": "成都猩羡健身服务有限公司锦江第一分公司",
+      "city": "成都",
+      "income": 163.49,
+      "vat": 1.63,
+      "total_tax": 1.73,
+      "vat_rate": 1.0,
+      "total_rate": 1.06
+    },
+    {
+      "name": "成都猩羡健身服务有限公司高新第五分公司",
+      "city": "成都",
+      "income": 153.09,
+      "vat": 1.53,
+      "total_tax": 1.62,
+      "vat_rate": 1.0,
+      "total_rate": 1.06
+    },
+    {
+      "name": "成都猩羡健身服务有限公司武侯第二分公司",
+      "city": "成都",
+      "income": 152.41,
+      "vat": 1.52,
+      "total_tax": 1.62,
+      "vat_rate": 1.0,
+      "total_rate": 1.06
+    },
+    {
+      "name": "成都猩羡健身服务有限公司武侯第一分公司",
+      "city": "成都",
+      "income": 125.71,
+      "vat": 1.26,
+      "total_tax": 1.33,
+      "vat_rate": 1.0,
+      "total_rate": 1.06
+    },
+    {
+      "name": "成都猩羡健身服务有限公司高新第六分公司",
+      "city": "成都",
+      "income": 122.79,
+      "vat": 1.23,
+      "total_tax": 1.3,
+      "vat_rate": 1.0,
+      "total_rate": 1.06
+    },
+    {
+      "name": "成都猩羡健身服务有限公司高新第二分公司",
+      "city": "成都",
+      "income": 108.91,
+      "vat": 1.09,
+      "total_tax": 1.15,
+      "vat_rate": 1.0,
+      "total_rate": 1.06
+    },
+    {
+      "name": "成都猩羡健身服务有限公司高新第一分公司",
+      "city": "成都",
+      "income": 83.36,
+      "vat": 0.83,
+      "total_tax": 0.88,
+      "vat_rate": 1.0,
+      "total_rate": 1.06
+    },
+    {
+      "name": "成都猩羡健身服务有限公司锦江第二分公司",
+      "city": "成都",
+      "income": 65.5,
+      "vat": 0.65,
+      "total_tax": 0.69,
+      "vat_rate": 1.0,
+      "total_rate": 1.06
+    },
+    {
+      "name": "成都猩羡健身服务有限公司高新第三分公司",
+      "city": "成都",
+      "income": 46.9,
+      "vat": 0.03,
+      "total_tax": 0.03,
+      "vat_rate": 0.0584,
+      "total_rate": 0.0604
+    },
+    {
+      "name": "成都猩羡健身服务有限公司金牛第一分公司",
+      "city": "成都",
+      "income": 23.72,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "深圳市猩球裂变科技有限公司成都分公司",
+      "city": "成都",
+      "income": 11.81,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "成都星河裂变科技有限公司",
+      "city": "成都",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "杭州猩慕健身管理有限公司",
+      "city": "杭州",
+      "income": 276.99,
+      "vat": 11.28,
+      "total_tax": 11.96,
+      "vat_rate": 4.0717,
+      "total_rate": 4.3162
+    },
+    {
+      "name": "杭州猩慕健身管理有限公司拱墅第一分公司",
+      "city": "杭州",
+      "income": 69.5,
+      "vat": 0.69,
+      "total_tax": 0.74,
+      "vat_rate": 1.0,
+      "total_rate": 1.06
+    },
+    {
+      "name": "杭州猩慕健身管理有限公司拱墅第二分公司",
+      "city": "杭州",
+      "income": 47.69,
+      "vat": 0.48,
+      "total_tax": 0.51,
+      "vat_rate": 1.0,
+      "total_rate": 1.06
+    },
+    {
+      "name": "杭州猩慕健身管理有限公司下城第二分公司",
+      "city": "杭州",
+      "income": 43.56,
+      "vat": 0.44,
+      "total_tax": 0.46,
+      "vat_rate": 1.0,
+      "total_rate": 1.06
+    },
+    {
+      "name": "深圳市猩球裂变科技有限公司杭州分公司",
+      "city": "杭州",
+      "income": 0.73,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "杭州猩慕健身管理有限公司滨江第一分公司",
+      "city": "杭州",
+      "income": 0.61,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "武汉猩羡健身管理有限公司江岸第一分公司",
+      "city": "武汉",
+      "income": 157.59,
+      "vat": 1.58,
+      "total_tax": 1.67,
+      "vat_rate": 1.0,
+      "total_rate": 1.06
+    },
+    {
+      "name": "武汉猩羡健身管理有限公司江汉第一分公司",
+      "city": "武汉",
+      "income": 117.18,
+      "vat": 1.17,
+      "total_tax": 1.24,
+      "vat_rate": 1.0,
+      "total_rate": 1.06
+    },
+    {
+      "name": "武汉猩羡健身管理有限公司武昌第三分公司",
+      "city": "武汉",
+      "income": 93.51,
+      "vat": 0.94,
+      "total_tax": 0.99,
+      "vat_rate": 1.0,
+      "total_rate": 1.06
+    },
+    {
+      "name": "武汉猩羡健身管理有限公司",
+      "city": "武汉",
+      "income": 80.63,
+      "vat": 0.0,
+      "total_tax": 0.22,
+      "vat_rate": 0.0,
+      "total_rate": 0.2705
+    },
+    {
+      "name": "武汉猩羡健身管理有限公司硚口第一分公司",
+      "city": "武汉",
+      "income": 78.51,
+      "vat": 0.53,
+      "total_tax": 0.56,
+      "vat_rate": 0.6721,
+      "total_rate": 0.7124
+    },
+    {
+      "name": "武汉猩羡健身管理有限公司江岸第二分公司",
+      "city": "武汉",
+      "income": 71.91,
+      "vat": 0.72,
+      "total_tax": 0.74,
+      "vat_rate": 1.0,
+      "total_rate": 1.0345
+    },
+    {
+      "name": "武汉猩羡健身管理有限公司硚口第二分公司",
+      "city": "武汉",
+      "income": 44.74,
+      "vat": 0.45,
+      "total_tax": 0.47,
+      "vat_rate": 1.0,
+      "total_rate": 1.06
+    },
+    {
+      "name": "武汉猩羡健身管理有限公司洪山第一分公司",
+      "city": "武汉",
+      "income": 7.52,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0092
+    },
+    {
+      "name": "深圳市猩球裂变科技有限公司武汉分公司",
+      "city": "武汉",
+      "income": 2.43,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "深圳市超级猩猩健身管理有限公司",
+      "city": "深圳",
+      "income": 5109.28,
+      "vat": 199.9,
+      "total_tax": 224.42,
+      "vat_rate": 4.082,
+      "total_rate": 4.5826
+    },
+    {
+      "name": "深圳猩羡健身管理有限公司",
+      "city": "深圳",
+      "income": 2942.6,
+      "vat": 96.77,
+      "total_tax": 109.25,
+      "vat_rate": 3.2887,
+      "total_rate": 3.7127
+    },
+    {
+      "name": "深圳市超级猩球商贸有限公司",
+      "city": "深圳",
+      "income": 865.52,
+      "vat": 19.09,
+      "total_tax": 20.51,
+      "vat_rate": 2.2057,
+      "total_rate": 2.3693
+    },
+    {
+      "name": "深圳市超级猩球数字传播有限公司",
+      "city": "深圳",
+      "income": 195.12,
+      "vat": 3.51,
+      "total_tax": 5.59,
+      "vat_rate": 1.7973,
+      "total_rate": 2.8627
+    },
+    {
+      "name": "深圳市猩猩海健身管理有限公司",
+      "city": "深圳",
+      "income": 135.19,
+      "vat": 1.35,
+      "total_tax": 1.43,
+      "vat_rate": 1.0,
+      "total_rate": 1.06
+    },
+    {
+      "name": "深圳市超猩体育文化有限公司",
+      "city": "深圳",
+      "income": 122.87,
+      "vat": 3.54,
+      "total_tax": 3.75,
+      "vat_rate": 2.8795,
+      "total_rate": 3.0532
+    },
+    {
+      "name": "深圳市超级金刚运动管理有限公司",
+      "city": "深圳",
+      "income": 90.94,
+      "vat": 0.91,
+      "total_tax": 0.96,
+      "vat_rate": 1.0,
+      "total_rate": 1.0605
+    },
+    {
+      "name": "深圳市猩球裂变科技有限公司",
+      "city": "深圳",
+      "income": 68.34,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0038
+    },
+    {
+      "name": "深圳市猩球裂变科技有限公司第一分公司",
+      "city": "深圳",
+      "income": 59.12,
+      "vat": 0.33,
+      "total_tax": 0.35,
+      "vat_rate": 0.0,
+      "total_rate": 0.5862
+    },
+    {
+      "name": "深圳猩盟健身管理有限公司",
+      "city": "深圳",
+      "income": 5.98,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "深圳超级猩猩科技控股有限公司",
+      "city": "深圳",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "深圳市超级香蕉健身管理合伙企业（有限合伙）",
+      "city": "深圳",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "深圳猩羡健身管理有限公司福田深业上城分店",
+      "city": "深圳",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "深圳猩羡健身管理有限公司福田理想时代大厦分店",
+      "city": "深圳",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "深圳猩羡健身管理有限公司罗湖大剧院分店",
+      "city": "深圳",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "深圳猩羡健身管理有限公司南山第一分公司",
+      "city": "深圳",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "深圳猩羡健身管理有限公司南山益田假日广场分店",
+      "city": "深圳",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "深圳猩羡健身管理有限公司龙华第一分公司",
+      "city": "深圳",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "深圳猩羡健身管理有限公司福田第三分公司",
+      "city": "深圳",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "深圳猩羡健身管理有限公司南山第二分公司",
+      "city": "深圳",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "深圳猩羡健身管理有限公司威新软件园分店",
+      "city": "深圳",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "深圳猩羡健身管理有限公司宝安第一分公司",
+      "city": "深圳",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "深圳猩羡健身管理有限公司宝安德业新城分店",
+      "city": "深圳",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "深圳猩羡健身管理有限公司南山第三分公司",
+      "city": "深圳",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "深圳猩羡健身管理有限公司南山大冲分店",
+      "city": "深圳",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "深圳猩羡健身管理有限公司福田第二分公司",
+      "city": "深圳",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "深圳猩羡健身管理有限公司福田第五分公司",
+      "city": "深圳",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "深圳猩羡健身管理有限公司福田第四分公司",
+      "city": "深圳",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "深圳猩羡健身管理有限公司南山第四分公司",
+      "city": "深圳",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "深圳猩羡健身管理有限公司海岸城分店",
+      "city": "深圳",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "深圳猩羡健身管理有限公司福田第一分公司",
+      "city": "深圳",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "深圳猩羡健身管理有限公司南山第五分公司",
+      "city": "深圳",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    },
+    {
+      "name": "深圳猩羡健身管理有限公司福田第六分公司",
+      "city": "深圳",
+      "income": 0.0,
+      "vat": 0.0,
+      "total_tax": 0.0,
+      "vat_rate": 0.0,
+      "total_rate": 0.0
+    }
+  ],
   "monthly": {
     "1月": {
       "inc26": 4578.36,
@@ -137,25 +1633,56 @@
       "count": 6,
       "details": [
         "零增值税"
+      ],
+      "months": [
+        "1月",
+        "2月",
+        "3月",
+        "4月",
+        "5月",
+        "6月"
       ]
     },
     "武汉猩羡健身管理有限公司": {
       "count": 6,
       "details": [
         "零增值税"
+      ],
+      "months": [
+        "1月",
+        "2月",
+        "3月",
+        "4月",
+        "5月",
+        "6月"
       ]
     },
     "深圳市猩球裂变科技有限公司": {
       "count": 6,
       "details": [
         "零增值税"
+      ],
+      "months": [
+        "1月",
+        "2月",
+        "3月",
+        "4月",
+        "5月",
+        "6月"
       ]
     },
     "上海猩盟健身管理有限公司": {
       "count": 5,
       "details": [
-        "VAT偏高(5.329465%)",
-        "零增值税"
+        "零增值税",
+        "VAT偏高(5.329465%)"
+      ],
+      "months": [
+        "1月",
+        "2月",
+        "3月",
+        "4月",
+        "6月"
       ]
     },
     "深圳市超级猩球商贸有限公司": {
@@ -163,18 +1690,35 @@
       "details": [
         "VAT偏高(5.301537%)",
         "零增值税"
+      ],
+      "months": [
+        "1月",
+        "2月",
+        "3月",
+        "4月",
+        "5月"
       ]
     },
     "成都猩羡健身服务有限公司": {
       "count": 3,
       "details": [
         "零增值税"
+      ],
+      "months": [
+        "2月",
+        "5月",
+        "6月"
       ]
     },
     "深圳市超级猩球数字传播有限公司": {
       "count": 3,
       "details": [
         "零增值税"
+      ],
+      "months": [
+        "1月",
+        "2月",
+        "3月"
       ]
     },
     "深圳市超猩体育文化有限公司": {
@@ -182,6 +1726,11 @@
       "details": [
         "零增值税",
         "VAT偏高(5.283686%)"
+      ],
+      "months": [
+        "3月",
+        "4月",
+        "6月"
       ]
     },
     "上海木星健身管理有限公司": {
@@ -189,18 +1738,30 @@
       "details": [
         "VAT偏低(0.42137%)",
         "零增值税"
+      ],
+      "months": [
+        "2月",
+        "4月"
       ]
     },
     "深圳市猩球裂变科技有限公司上海分公司": {
       "count": 2,
       "details": [
         "零增值税"
+      ],
+      "months": [
+        "3月",
+        "6月"
       ]
     },
     "北京猩羡健身管理有限公司": {
       "count": 2,
       "details": [
         "零增值税"
+      ],
+      "months": [
+        "1月",
+        "2月"
       ]
     },
     "北京圆星健身管理有限公司": {
@@ -208,26 +1769,8522 @@
       "details": [
         "VAT偏低(0.051701%)",
         "VAT偏低(0.104497%)"
+      ],
+      "months": [
+        "3月",
+        "6月"
       ]
     },
     "深圳市猩球裂变科技有限公司北京分公司": {
       "count": 2,
       "details": [
         "零增值税"
+      ],
+      "months": [
+        "3月",
+        "6月"
       ]
     },
     "南京猩慕健身管理有限公司建邺第一分公司": {
       "count": 2,
       "details": [
-        "VAT偏低(0.027292%)",
-        "VAT偏低(0.073071%)"
+        "VAT偏低(0.073071%)",
+        "VAT偏低(0.027292%)"
+      ],
+      "months": [
+        "3月",
+        "6月"
       ]
     },
     "深圳市猩球裂变科技有限公司广州分公司": {
       "count": 2,
       "details": [
         "零增值税"
+      ],
+      "months": [
+        "3月",
+        "6月"
+      ]
+    },
+    "成都猩羡健身服务有限公司高新第三分公司": {
+      "count": 2,
+      "details": [
+        "VAT偏低(0.037154%)",
+        "VAT偏低(0.079393%)"
+      ],
+      "months": [
+        "3月",
+        "6月"
+      ]
+    },
+    "深圳市猩球裂变科技有限公司成都分公司": {
+      "count": 2,
+      "details": [
+        "零增值税"
+      ],
+      "months": [
+        "3月",
+        "6月"
+      ]
+    },
+    "深圳市超级猩猩健身管理有限公司": {
+      "count": 2,
+      "details": [
+        "VAT偏高(5.187738%)",
+        "VAT偏高(5.281883%)"
+      ],
+      "months": [
+        "1月",
+        "6月"
+      ]
+    },
+    "南京猩慕健身管理有限公司南京江宁第一分公司": {
+      "count": 1,
+      "details": [
+        "VAT偏低(0.025306%)"
+      ],
+      "months": [
+        "6月"
+      ]
+    },
+    "南京猩慕健身管理有限公司鼓楼第二分公司": {
+      "count": 1,
+      "details": [
+        "VAT偏低(0.080226%)"
+      ],
+      "months": [
+        "3月"
       ]
     }
-  }
+  },
+  "company_monthly": {
+    "上海猩羡健身管理有限公司": {
+      "1月": {
+        "inc": 1215.0324,
+        "vat": 30.1813
+      },
+      "2月": {
+        "inc": 841.5923,
+        "vat": 22.8906
+      },
+      "3月": {
+        "inc": 1313.9407,
+        "vat": 43.7595
+      },
+      "4月": {
+        "inc": 1239.1212,
+        "vat": 12.2821
+      },
+      "5月": {
+        "inc": 1392.3814,
+        "vat": 52.2474
+      },
+      "6月": {
+        "inc": 1264.125,
+        "vat": 41.696
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩盟健身管理有限公司": {
+      "1月": {
+        "inc": 511.4834,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 321.2527,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 574.4289,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 564.7581,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 573.6455,
+        "vat": 27.1839
+      },
+      "6月": {
+        "inc": 631.8748,
+        "vat": 33.6756
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海木星健身管理有限公司": {
+      "1月": {
+        "inc": 32.433,
+        "vat": 0.7376
+      },
+      "2月": {
+        "inc": 17.8971,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 33.5752,
+        "vat": 1.0151
+      },
+      "4月": {
+        "inc": 32.5844,
+        "vat": 0.1373
+      },
+      "5月": {
+        "inc": 32.2442,
+        "vat": 1.1414
+      },
+      "6月": {
+        "inc": 34.2038,
+        "vat": 1.252
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳市猩球裂变科技有限公司上海分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 23.65,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 29.2815,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海联星健身管理有限公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海驿猩慕健身管理有限公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司闵行第一分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司徐汇第八分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司普陀分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司徐汇第九分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司长宁第六分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司浦东第三分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司静安第五分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司黄浦第六分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司徐汇第十一分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司浦东第十四分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司黄浦第九分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司普陀第四分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司虹口第二分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司静安第十一分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司黄浦第十分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司浦东第八分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司普陀第二分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司静安第六分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司虹口第四分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司黄浦第二分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司徐汇第一分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司静安第十二分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司静安第四分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司长宁第四分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司浦东第十分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司闵行第三分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司黄浦分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司浦东第六分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司静安第十分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司浦东第九分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司杨浦第一分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司徐汇第四分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司浦东第四分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司徐汇第十二分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司虹口第一分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司长宁第一分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司长宁第二分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司徐汇第十三分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司浦东第五分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司普陀第一分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司徐汇第十四分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司浦东第十一分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司黄浦第八分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司黄浦第十二分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司浦东第七分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司虹口第三分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司静安第三分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司杨浦第四分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司杨浦第三分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司长宁第三分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司静安第十三分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海猩羡健身管理有限公司黄浦第十四分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "上海木星健身管理有限公司静安分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "北京猩羡健身管理有限公司": {
+      "1月": {
+        "inc": 737.0652,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 499.0943,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 800.9994,
+        "vat": 22.2567
+      },
+      "4月": {
+        "inc": 765.1472,
+        "vat": 17.2296
+      },
+      "5月": {
+        "inc": 737.2081,
+        "vat": 21.0708
+      },
+      "6月": {
+        "inc": 761.7353,
+        "vat": 26.9133
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "北京圆星健身管理有限公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 23.1098,
+        "vat": 0.0241
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 27.1076,
+        "vat": 0.014
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳市猩球裂变科技有限公司北京分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 10.7044,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 9.3164,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "北京猩羡健身管理有限公司朝阳第一分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "北京猩羡健身管理有限公司西城第一分公司（已注销）": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "北京猩羡健身管理有限公司海淀第一分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "北京猩羡健身管理有限公司东城第四分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "北京猩羡健身管理有限公司西城第四分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "北京猩羡健身管理有限公司西城第三分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "北京猩羡健身管理有限公司西城第二分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "北京猩羡健身管理有限公司东城第二分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "北京猩羡健身管理有限公司朝阳第九分公司（已注销）": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "北京猩羡健身管理有限公司朝阳第六分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "北京猩羡健身管理有限公司朝阳第七分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "北京猩羡健身管理有限公司朝阳第三分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "北京猩羡健身管理有限公司朝阳第四分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "北京猩羡健身管理有限公司朝阳第五分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "北京猩羡健身管理有限公司东城第六分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "北京猩羡健身管理有限公司海淀第三分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "北京猩羡健身管理有限公司丰台第二分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "北京猩羡健身管理有限公司朝阳第十九分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "北京猩羡健身管理有限公司海淀第五分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "北京猩羡健身管理有限公司东城第五分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "北京猩羡健身管理有限公司海淀第二分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "北京猩羡健身管理有限公司朝阳第十分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "北京猩羡健身管理有限公司东城第七分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "北京猩羡健身管理有限公司海淀第四分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "南京猩慕健身管理有限公司": {
+      "1月": {
+        "inc": 21.7646,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 17.5511,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 22.9804,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 20.8049,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 22.311,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 21.8872,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "南京猩慕健身管理有限公司南京秦淮第二分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 31.9385,
+        "vat": 0.3194
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 35.8487,
+        "vat": 0.3585
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "南京猩慕健身管理有限公司建邺第一分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 22.9381,
+        "vat": 0.0168
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 25.887,
+        "vat": 0.0071
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "南京猩慕健身管理有限公司南京江宁第一分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 14.0047,
+        "vat": 0.0035
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "南京猩慕健身管理有限公司鼓楼第二分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 13.5604,
+        "vat": 0.0109
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳市猩球裂变科技有限公司南京分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.1243,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "广州市猩慕健身管理有限公司": {
+      "1月": {
+        "inc": 364.3583,
+        "vat": 6.2691
+      },
+      "2月": {
+        "inc": 242.4109,
+        "vat": 1.88
+      },
+      "3月": {
+        "inc": 379.4666,
+        "vat": 7.4223
+      },
+      "4月": {
+        "inc": 382.5973,
+        "vat": 11.4809
+      },
+      "5月": {
+        "inc": 338.9289,
+        "vat": 7.4027
+      },
+      "6月": {
+        "inc": 391.5018,
+        "vat": 4.68
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳市猩球裂变科技有限公司广州分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 5.9927,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 5.7093,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "广州市猩慕健身管理有限公司天河第一分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "广州市猩慕健身管理有限公司天河第三分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "广州市猩慕健身管理有限公司海珠第一分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "广州市猩慕健身管理有限公司天河第二分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "广州市猩慕健身管理有限公司天河第六分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "广州市猩慕健身管理有限公司天河第七分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "广州市猩慕健身管理有限公司越秀第二分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "广州市猩慕健身管理有限公司越秀第一分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "广州市猩慕健身管理有限公司天河第五分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "广州市猩慕健身管理有限公司天河第四分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "成都猩羡健身服务有限公司": {
+      "1月": {
+        "inc": 112.0406,
+        "vat": 1.891
+      },
+      "2月": {
+        "inc": 77.1174,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 112.0159,
+        "vat": 1.5947
+      },
+      "4月": {
+        "inc": 107.0786,
+        "vat": 4.2979
+      },
+      "5月": {
+        "inc": 106.0225,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 111.3547,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "成都猩羡健身服务有限公司高新第四分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 83.1365,
+        "vat": 0.8314
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 82.4023,
+        "vat": 0.824
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "成都猩羡健身服务有限公司锦江第一分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 76.752,
+        "vat": 0.7675
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 86.7422,
+        "vat": 0.8674
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "成都猩羡健身服务有限公司高新第五分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 75.6159,
+        "vat": 0.7562
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 77.4722,
+        "vat": 0.7747
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "成都猩羡健身服务有限公司武侯第二分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 72.1391,
+        "vat": 0.7214
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 80.2743,
+        "vat": 0.8027
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "成都猩羡健身服务有限公司武侯第一分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 42.1904,
+        "vat": 0.4219
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 83.5243,
+        "vat": 0.8352
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "成都猩羡健身服务有限公司高新第六分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 59.691,
+        "vat": 0.5969
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 63.1007,
+        "vat": 0.631
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "成都猩羡健身服务有限公司高新第二分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 56.7219,
+        "vat": 0.5672
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 52.1865,
+        "vat": 0.5219
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "成都猩羡健身服务有限公司高新第一分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 40.2122,
+        "vat": 0.4021
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 43.1517,
+        "vat": 0.4315
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "成都猩羡健身服务有限公司锦江第二分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 31.4551,
+        "vat": 0.3146
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 34.0423,
+        "vat": 0.3404
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "成都猩羡健身服务有限公司高新第三分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 23.594,
+        "vat": 0.0187
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 23.3058,
+        "vat": 0.0087
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "成都猩羡健身服务有限公司金牛第一分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 23.7151,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳市猩球裂变科技有限公司成都分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 5.2281,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 6.5821,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "成都星河裂变科技有限公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "杭州猩慕健身管理有限公司": {
+      "1月": {
+        "inc": 49.3083,
+        "vat": 2.0028
+      },
+      "2月": {
+        "inc": 35.3623,
+        "vat": 1.2975
+      },
+      "3月": {
+        "inc": 48.6005,
+        "vat": 2.099
+      },
+      "4月": {
+        "inc": 48.4026,
+        "vat": 1.4459
+      },
+      "5月": {
+        "inc": 47.6655,
+        "vat": 2.2481
+      },
+      "6月": {
+        "inc": 47.6511,
+        "vat": 2.1847
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "杭州猩慕健身管理有限公司拱墅第一分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 33.5169,
+        "vat": 0.3352
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 35.9822,
+        "vat": 0.3598
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "杭州猩慕健身管理有限公司拱墅第二分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 47.6908,
+        "vat": 0.4769
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "杭州猩慕健身管理有限公司下城第二分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 43.5572,
+        "vat": 0.4356
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳市猩球裂变科技有限公司杭州分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.7271,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "杭州猩慕健身管理有限公司滨江第一分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.6075,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "武汉猩羡健身管理有限公司江岸第一分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 72.6999,
+        "vat": 0.727
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 84.8947,
+        "vat": 0.8489
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "武汉猩羡健身管理有限公司江汉第一分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 55.2413,
+        "vat": 0.5524
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 61.9371,
+        "vat": 0.6194
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "武汉猩羡健身管理有限公司武昌第三分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 42.9046,
+        "vat": 0.429
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 50.6103,
+        "vat": 0.5061
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "武汉猩羡健身管理有限公司": {
+      "1月": {
+        "inc": 7.0552,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 3.2691,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 4.6664,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 3.9067,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.604,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 61.126,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "武汉猩羡健身管理有限公司硚口第一分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 52.7634,
+        "vat": 0.5276
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 25.7417,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "武汉猩羡健身管理有限公司江岸第二分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 41.3748,
+        "vat": 0.4137
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 30.5307,
+        "vat": 0.3053
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "武汉猩羡健身管理有限公司硚口第二分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 44.7425,
+        "vat": 0.4474
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "武汉猩羡健身管理有限公司洪山第一分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 7.5159,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳市猩球裂变科技有限公司武汉分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 3.2268,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": -0.7954,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳市超级猩猩健身管理有限公司": {
+      "1月": {
+        "inc": 764.2739,
+        "vat": 39.6485
+      },
+      "2月": {
+        "inc": 737.7426,
+        "vat": 5.5026
+      },
+      "3月": {
+        "inc": 790.5965,
+        "vat": 33.2846
+      },
+      "4月": {
+        "inc": 729.3173,
+        "vat": 25.2842
+      },
+      "5月": {
+        "inc": 863.6161,
+        "vat": 31.5444
+      },
+      "6月": {
+        "inc": 1223.7376,
+        "vat": 64.6364
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳猩羡健身管理有限公司": {
+      "1月": {
+        "inc": 502.9756,
+        "vat": 16.5082
+      },
+      "2月": {
+        "inc": 304.9581,
+        "vat": 6.9314
+      },
+      "3月": {
+        "inc": 538.2403,
+        "vat": 18.3408
+      },
+      "4月": {
+        "inc": 531.6027,
+        "vat": 14.677
+      },
+      "5月": {
+        "inc": 527.5214,
+        "vat": 22.5735
+      },
+      "6月": {
+        "inc": 537.3017,
+        "vat": 17.7416
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳市超级猩球商贸有限公司": {
+      "1月": {
+        "inc": 227.8509,
+        "vat": 12.0796
+      },
+      "2月": {
+        "inc": 51.2899,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 45.7452,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 174.94,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 178.7487,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 186.9422,
+        "vat": 7.0113
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳市超级猩球数字传播有限公司": {
+      "1月": {
+        "inc": 2.0503,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 1.0081,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 1.2956,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 93.588,
+        "vat": 2.1171
+      },
+      "5月": {
+        "inc": 60.7428,
+        "vat": 0.8345
+      },
+      "6月": {
+        "inc": 36.438,
+        "vat": 0.5554
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳市猩猩海健身管理有限公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 61.4608,
+        "vat": 0.6146
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 73.7274,
+        "vat": 0.7373
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳市超猩体育文化有限公司": {
+      "1月": {
+        "inc": 17.882,
+        "vat": 0.5607
+      },
+      "2月": {
+        "inc": 10.6331,
+        "vat": 0.4645
+      },
+      "3月": {
+        "inc": 14.7415,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 22.9414,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 24.6466,
+        "vat": 0.8208
+      },
+      "6月": {
+        "inc": 32.0206,
+        "vat": 1.6919
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳市超级金刚运动管理有限公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 41.1979,
+        "vat": 0.412
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 49.7394,
+        "vat": 0.4974
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳市猩球裂变科技有限公司": {
+      "1月": {
+        "inc": 12.7815,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 10.6375,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 13.0218,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 10.9333,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 10.0645,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 10.8989,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳市猩球裂变科技有限公司第一分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 26.1123,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 33.0082,
+        "vat": 0.3301
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳猩盟健身管理有限公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 5.9818,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳超级猩猩科技控股有限公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳市超级香蕉健身管理合伙企业（有限合伙）": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳猩羡健身管理有限公司福田深业上城分店": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳猩羡健身管理有限公司福田理想时代大厦分店": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳猩羡健身管理有限公司罗湖大剧院分店": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳猩羡健身管理有限公司南山第一分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳猩羡健身管理有限公司南山益田假日广场分店": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳猩羡健身管理有限公司龙华第一分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳猩羡健身管理有限公司福田第三分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳猩羡健身管理有限公司南山第二分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳猩羡健身管理有限公司威新软件园分店": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳猩羡健身管理有限公司宝安第一分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳猩羡健身管理有限公司宝安德业新城分店": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳猩羡健身管理有限公司南山第三分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳猩羡健身管理有限公司南山大冲分店": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳猩羡健身管理有限公司福田第二分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳猩羡健身管理有限公司福田第五分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳猩羡健身管理有限公司福田第四分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳猩羡健身管理有限公司南山第四分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳猩羡健身管理有限公司海岸城分店": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳猩羡健身管理有限公司福田第一分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳猩羡健身管理有限公司南山第五分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    },
+    "深圳猩羡健身管理有限公司福田第六分公司": {
+      "1月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "2月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "3月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "4月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "5月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "6月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "7月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "8月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "9月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "10月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "11月": {
+        "inc": 0.0,
+        "vat": 0.0
+      },
+      "12月": {
+        "inc": 0.0,
+        "vat": 0.0
+      }
+    }
+  },
+  "city_monthly": {
+    "上海": {
+      "1月": 1758.9488000000001,
+      "2月": 1180.7421,
+      "3月": 1945.5948,
+      "4月": 1836.4637,
+      "5月": 1998.2711,
+      "6月": 1959.4851,
+      "7月": 0.0,
+      "8月": 0.0,
+      "9月": 0.0,
+      "10月": 0.0,
+      "11月": 0.0,
+      "12月": 0.0
+    },
+    "北京": {
+      "1月": 737.0652,
+      "2月": 499.0943,
+      "3月": 834.8136,
+      "4月": 765.1472,
+      "5月": 737.2081,
+      "6月": 798.1593000000001,
+      "7月": 0.0,
+      "8月": 0.0,
+      "9月": 0.0,
+      "10月": 0.0,
+      "11月": 0.0,
+      "12月": 0.0
+    },
+    "南京": {
+      "1月": 21.7646,
+      "2月": 17.5511,
+      "3月": 91.4174,
+      "4月": 20.8049,
+      "5月": 22.311,
+      "6月": 97.7519,
+      "7月": 0.0,
+      "8月": 0.0,
+      "9月": 0.0,
+      "10月": 0.0,
+      "11月": 0.0,
+      "12月": 0.0
+    },
+    "广州": {
+      "1月": 364.3583,
+      "2月": 242.4109,
+      "3月": 385.45930000000004,
+      "4月": 382.5973,
+      "5月": 338.9289,
+      "6月": 397.2111,
+      "7月": 0.0,
+      "8月": 0.0,
+      "9月": 0.0,
+      "10月": 0.0,
+      "11月": 0.0,
+      "12月": 0.0
+    },
+    "成都": {
+      "1月": 112.0406,
+      "2月": 77.1174,
+      "3月": 678.7521000000002,
+      "4月": 107.0786,
+      "5月": 106.0225,
+      "6月": 767.8541999999999,
+      "7月": 0.0,
+      "8月": 0.0,
+      "9月": 0.0,
+      "10月": 0.0,
+      "11月": 0.0,
+      "12月": 0.0
+    },
+    "杭州": {
+      "1月": 49.3083,
+      "2月": 35.3623,
+      "3月": 126.2821,
+      "4月": 48.4026,
+      "5月": 47.6655,
+      "6月": 132.0512,
+      "7月": 0.0,
+      "8月": 0.0,
+      "9月": 0.0,
+      "10月": 0.0,
+      "11月": 0.0,
+      "12月": 0.0
+    },
+    "武汉": {
+      "1月": 7.0552,
+      "2月": 3.2691,
+      "3月": 272.8772,
+      "4月": 3.9067,
+      "5月": 0.604,
+      "6月": 366.3035,
+      "7月": 0.0,
+      "8月": 0.0,
+      "9月": 0.0,
+      "10月": 0.0,
+      "11月": 0.0,
+      "12月": 0.0
+    },
+    "深圳": {
+      "1月": 1527.8142,
+      "2月": 1116.2693000000002,
+      "3月": 1532.4119,
+      "4月": 1563.3227,
+      "5月": 1665.3401,
+      "6月": 2189.7958000000003,
+      "7月": 0.0,
+      "8月": 0.0,
+      "9月": 0.0,
+      "10月": 0.0,
+      "11月": 0.0,
+      "12月": 0.0
+    }
+  },
+  "months": [
+    "1月",
+    "2月",
+    "3月",
+    "4月",
+    "5月",
+    "6月",
+    "7月",
+    "8月",
+    "9月",
+    "10月",
+    "11月",
+    "12月"
+  ]
 }
