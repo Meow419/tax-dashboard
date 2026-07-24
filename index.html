@@ -7,58 +7,57 @@
 <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Microsoft YaHei','宋体',sans-serif}
-body{background:#f0f2f5;padding:20px;min-height:100vh}
-.header{background:linear-gradient(135deg,#305496,#4a7bc7);color:#fff;padding:24px 32px;border-radius:12px;margin-bottom:16px}
+body{background:#fff;padding:20px;min-height:100vh;color:#000}
+.header{background:#000;color:#fff;padding:24px 32px;border-radius:12px;margin-bottom:16px}
 .header h1{font-size:24px;font-weight:bold}
-.header p{font-size:13px;opacity:0.8;margin-top:4px}
-.tabs{display:flex;gap:4px;margin-bottom:16px;background:#fff;border-radius:10px;padding:4px;box-shadow:0 2px 8px rgba(0,0,0,0.06);flex-wrap:wrap}
+.header p{font-size:13px;opacity:0.7;margin-top:4px}
+.tabs{display:flex;gap:4px;margin-bottom:16px;background:#fff;border-radius:10px;padding:4px;box-shadow:0 0 0 1px #ddd;flex-wrap:wrap}
 .tab{padding:10px 20px;border-radius:8px;cursor:pointer;font-size:13px;color:#666;transition:all .2s;border:none;background:none}
-.tab:hover{background:#f0f4ff;color:#305496}
-.tab.active{background:#305496;color:#fff;font-weight:bold}
+.tab:hover{background:#fff5cc}
+.tab.active{background:#000;color:#fff;font-weight:bold}
 .panel{display:none}
 .panel.active{display:block}
 .kpi-row{display:flex;gap:12px;margin-bottom:16px;flex-wrap:wrap}
-.kpi-card{flex:1;min-width:150px;background:#fff;border-radius:10px;padding:16px 20px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
-.kpi-card .lbl{font-size:12px;color:#888;margin-bottom:2px}
-.kpi-card .val{font-size:22px;font-weight:bold;color:#305496}
+.kpi-card{flex:1;min-width:150px;background:#fff;border-radius:10px;padding:16px 20px;box-shadow:0 0 0 1px #ddd;border-left:4px solid #000}
+.kpi-card .lbl{font-size:12px;color:#666;margin-bottom:2px}
+.kpi-card .val{font-size:22px;font-weight:bold;color:#000}
 .kpi-card .sub{font-size:11px;color:#999;margin-top:2px}
-.kpi-card.small-bg{border-left:4px solid #27ae60}
-.kpi-card.general-bg{border-left:4px solid #305496}
+.kpi-card.warn{border-left-color:#c00}
+.kpi-card.ok{border-left-color:#000}
 .chart-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
-.chart-card{background:#fff;border-radius:10px;padding:16px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
-.chart-card h3{font-size:14px;color:#333;margin-bottom:10px;padding-left:8px;border-left:3px solid #305496}
+.chart-card{background:#fff;border-radius:10px;padding:16px;box-shadow:0 0 0 1px #ddd}
+.chart-card h3{font-size:14px;color:#000;margin-bottom:10px;padding-left:8px;border-left:3px solid #000}
 .chart-card .chart-box{width:100%;height:280px}
 .chart-card.full{grid-column:1/-1}
 .chart-card.full .chart-box{height:320px}
 .data-table{width:100%;border-collapse:collapse;font-size:12px}
-.data-table th{background:#305496;color:#fff;padding:7px 5px;text-align:center;font-weight:bold;border:1px solid #3a5a9e}
-.data-table td{padding:5px;text-align:right;border:1px solid #e8e8e8}
+.data-table th{background:#000;color:#fff;padding:7px 5px;text-align:center;font-weight:bold;border:1px solid #333}
+.data-table td{padding:5px;text-align:right;border:1px solid #ccc}
 .data-table td:first-child,.data-table th:first-child{text-align:left}
-.data-table tr:nth-child(even){background:#f8faff}
-.data-table tr:hover{background:#e8f0fe}
-.data-table .highlight{background:#fffbe6!important}
-.clickable{cursor:pointer;color:#305496;text-decoration:underline}
-.clickable:hover{color:#e74c3c}
+.data-table tr:nth-child(even){background:#f9f9f9}
+.data-table tr:hover{background:#fffbe6}
+.data-table .warn-row{background:#fff5cc!important}
+.data-table .alert-row{background:#ffe0e0!important}
+.clickable{cursor:pointer;color:#000;text-decoration:underline}
+.clickable:hover{color:#c00}
 .search-bar{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
-.search-bar input{padding:8px 12px;border:1px solid #ddd;border-radius:6px;font-size:13px;flex:1;min-width:160px}
-.search-bar select{padding:8px 12px;border:1px solid #ddd;border-radius:6px;font-size:13px}
-.alert-list{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
-.alert-head{display:flex;padding:10px 16px;background:#305496;color:#fff;font-weight:bold;font-size:13px}
+.search-bar input{padding:8px 12px;border:1px solid #ccc;border-radius:6px;font-size:13px;flex:1;min-width:160px}
+.search-bar select{padding:8px 12px;border:1px solid #ccc;border-radius:6px;font-size:13px}
+.alert-list{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 0 0 1px #ddd}
+.alert-head{display:flex;padding:10px 16px;background:#000;color:#fff;font-weight:bold;font-size:13px}
 .alert-head span{flex:1}
-.alert-row{display:flex;padding:8px 16px;border-bottom:1px solid #f0f0f0;font-size:13px;cursor:pointer}
-.alert-row:hover{background:#fffbe6}
+.alert-row{display:flex;padding:8px 16px;border-bottom:1px solid #eee;font-size:13px;cursor:pointer}
+.alert-row:hover{background:#fff5cc}
 .alert-row span{flex:1}
 .alert-row .badge{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;color:#fff}
-.badge-red{background:#e74c3c}
-.badge-yellow{background:#f39c12}
-.badge-orange{background:#e67e22}
-.badge-green{background:#27ae60}
+.badge-red{background:#c00}
+.badge-yellow{background:#cc0;color:#000}
 .modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:1000;justify-content:center;align-items:center}
 .modal.show{display:flex}
-.modal-content{background:#fff;border-radius:12px;width:92%;max-width:900px;max-height:85vh;overflow:auto;padding:24px}
-.modal-content h2{font-size:18px;color:#305496;margin-bottom:16px}
+.modal-content{background:#fff;border-radius:12px;width:92%;max-width:900px;max-height:85vh;overflow:auto;padding:24px;box-shadow:0 0 0 1px #000}
+.modal-content h2{font-size:18px;color:#000;margin-bottom:16px}
 .close-btn{float:right;font-size:24px;cursor:pointer;color:#999;border:none;background:none}
-.close-btn:hover{color:#333}
+.close-btn:hover{color:#000}
 .footer{text-align:center;color:#999;font-size:12px;padding:16px;margin-top:16px}
 @media(max-width:768px){.chart-grid{grid-template-columns:1fr}.kpi-card{min-width:45%}}
 </style>
@@ -176,16 +175,16 @@ function renderOverview(){
   echarts.init(document.getElementById('chartTrend')).setOption({
     tooltip:{trigger:'axis'},legend:{data:['2026收入','2025收入']},grid:{left:'6%',right:'4%',bottom:'10%'},
     xAxis:{type:'category',data:M},yAxis:{type:'value',name:'万元'},
-    series:[{name:'2026收入',type:'bar',data:m.map(x=>x.inc26),itemStyle:{color:'#305496'}},
-            {name:'2025收入',type:'line',data:m.map(x=>x.inc25),lineStyle:{color:'#e67e22',width:2},itemStyle:{color:'#e67e22'}}]
+    series:[{name:'2026收入',type:'bar',data:m.map(x=>x.inc26),itemStyle:{color:'#000'}},
+            {name:'2025收入',type:'line',data:m.map(x=>x.inc25),lineStyle:{color:'#cc0',width:2},itemStyle:{color:'#cc0'}}]
   });
   const cs = D.cities;
   echarts.init(document.getElementById('chartCity')).setOption({
     tooltip:{trigger:'axis'},legend:{data:['收入','税费']},grid:{left:'8%',right:'4%',bottom:'12%'},
     xAxis:{type:'category',data:cs.map(c=>c.name),axisLabel:{rotate:25}},
     yAxis:{type:'value',name:'万元'},
-    series:[{name:'收入',type:'bar',data:cs.map(c=>c.income),itemStyle:{color:'#305496'}},
-            {name:'税费',type:'bar',data:cs.map(c=>c.total_tax),itemStyle:{color:'#e74c3c'}}]
+    series:[{name:'收入',type:'bar',data:cs.map(c=>c.income),itemStyle:{color:'#000'}},
+            {name:'税费',type:'bar',data:cs.map(c=>c.total_tax),itemStyle:{color:'#c00'}}]
   });
   const srt = [...cs].sort((a,b)=>b.total_rate-a.total_rate);
   echarts.init(document.getElementById('chartRate')).setOption({
@@ -193,7 +192,7 @@ function renderOverview(){
     xAxis:{type:'category',data:srt.map(c=>c.name),axisLabel:{rotate:25}},
     yAxis:{type:'value',name:'%',axisLabel:{formatter:'{value}%'}},
     series:[{name:'综合税负',type:'bar',data:srt.map(c=>c.total_rate),
-             itemStyle:{color:p=>p.value>3?'#e74c3c':p.value<1?'#27ae60':'#305496'}}]
+             itemStyle:{color:p=>p.value>3?'#c00':'#000'}}]
   });
 }
 
@@ -219,7 +218,7 @@ function showCityMonth(city){
   echarts.init(document.getElementById('chartCityMonth')).setOption({
     tooltip:{trigger:'axis'},grid:{left:'6%',right:'4%',bottom:'10%'},
     xAxis:{type:'category',data:M},yAxis:{type:'value',name:'万元'},
-    series:[{name:city+'收入',type:'line',data:v,lineStyle:{color:'#305496',width:3},areaStyle:{color:'rgba(48,84,150,0.15)'}}]
+    series:[{name:city+'收入',type:'line',data:v,lineStyle:{color:'#000',width:3},areaStyle:{color:'rgba(0,0,0,0.08)'}}]
   });
   switchTab('byCity');
 }
@@ -283,7 +282,7 @@ function renderSmallPanel(){
     xAxis:{type:'category',data:['小规模纳税人','一般纳税人']},
     yAxis:{type:'value',name:'%'},
     series:[
-      {name:'综合税负率',type:'bar',data:[st.small_rate,st.general_rate],itemStyle:{color:p=>p.dataIndex===0?'#27ae60':'#305496'},barWidth:60}
+      {name:'综合税负率',type:'bar',data:[st.small_rate,st.general_rate],itemStyle:{color:p=>p.dataIndex===0?'#000':'#c00'},barWidth:60}
     ]
   });
 
@@ -294,8 +293,8 @@ function renderSmallPanel(){
     xAxis:{type:'category',data:bc.map(x=>x[0]),axisLabel:{rotate:25}},
     yAxis:[{type:'value',name:'家数'},{type:'value',name:'万元'}],
     series:[
-      {name:'家数',type:'bar',data:bc.map(x=>x[1].count),itemStyle:{color:'#27ae60'}},
-      {name:'收入(万)',type:'line',yAxisIndex:1,data:bc.map(x=>x[1].income),lineStyle:{color:'#e67e22',width:2},itemStyle:{color:'#e67e22'}}
+      {name:'家数',type:'bar',data:bc.map(x=>x[1].count),itemStyle:{color:'#000'}},
+          {name:'收入(万)',type:'line',yAxisIndex:1,data:bc.map(x=>x[1].income),lineStyle:{color:'#c00',width:2},itemStyle:{color:'#c00'}}
     ]
   });
   renderSmallDetail();
@@ -305,8 +304,8 @@ function renderSmallDetail(){
   const list = D.small_taxpayer.detail.filter(c=>!q||c.name.toLowerCase().includes(q));
   let h = '<table class="data-table"><tr><th>公司名称</th><th>城市</th><th>收入(万)</th><th>增值税(万)</th><th>税费(万)</th><th>增值税税负</th><th>综合税负率</th><th>状态</th></tr>';
   list.forEach(c=>{
-    const status = c.vat===0&&c.income>0?'⚠️零增值税':c.total_rate<0.5?'偏低':c.total_rate>3?'偏高':'正常';
-    const cls = status.includes('零增值税')?'highlight':'';
+    const status = c.vat===0&&c.income>0?'!零增值税':c.total_rate<0.5?'偏低':c.total_rate>3?'偏高':'正常';
+    const cls = status.includes('零增值税')?'alert-row':'';
     h += `<tr class="${cls}"><td>${c.name}</td><td>${c.city}</td><td>${c.income.toFixed(2)}</td><td>${c.vat.toFixed(2)}</td>
       <td>${c.tax.toFixed(2)}</td><td>${c.vat_rate.toFixed(4)}%</td><td>${c.total_rate.toFixed(4)}%</td><td>${status}</td></tr>`;
   });
