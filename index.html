@@ -95,8 +95,8 @@ body{background:#fff;padding:20px;min-height:100vh;color:#000}
     <div id="msDropdownList" style="max-height:200px;overflow-y:auto;font-size:13px"></div>
   </div>
 </div>
-<div id="cityFilterGroup" style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;font-size:12px;margin-top:4px"></div>
-<div id="natureFilterGroup" style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;font-size:12px"></div>
+<div id="cityFilterContainer" style="position:relative;min-width:140px"></div>
+<div id="natureFilterContainer" style="position:relative;min-width:140px"></div>
 <select id="sortBy" onchange="renderCompany()"><option value="income">按收入排序</option><option value="rate">按税负率</option><option value="name">按名称</option></select></div>
 <div class="chart-card"><div id="companyTable"></div></div></div>
 
@@ -126,11 +126,8 @@ body{background:#fff;padding:20px;min-height:100vh;color:#000}
 <script>
 let D=null; const M=['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'];
 function fm(v){if(v===null||v===undefined)return'0.00';return Number(v).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g,',')}
-function getCityFilter(){const cbs=document.querySelectorAll('.cityCb:checked');const vals=[];cbs.forEach(cb=>{if(cb.value)vals.push(cb.value);});return vals;}
-function getNatureFilter(){const cbs=document.querySelectorAll('.natureCb:checked');const vals=[];cbs.forEach(cb=>{if(cb.value)vals.push(cb.value);});return vals;}
-function toggleCityAll(){const all=document.querySelector('.cityCb[value=""]');const checked=all.checked;document.querySelectorAll('.cityCb').forEach(cb=>cb.checked=checked);renderCompany();}
-function toggleNatureAll(){const all=document.querySelector('.natureCb[value=""]');const checked=all.checked;document.querySelectorAll('.natureCb').forEach(cb=>cb.checked=checked);renderCompany();}
-function onNatureChange(){const all=document.querySelector('.natureCb[value=""]');const others=document.querySelectorAll('.natureCb:not([value=""])');const allChecked=Array.from(others).every(cb=>cb.checked);all.checked=allChecked;renderCompany();}
+function getCityFilter(){return Array.from(window._cityFilter||[]);}
+function getNatureFilter(){return Array.from(window._natureFilter||[]);}
 async function init(){const r=await fetch('data.json?v=20260724');D=await r.json();document.getElementById('updateTime').textContent='数据更新：2026-07-23';
   renderOverview();renderCityPanel();renderCompanyPanel();renderSmallPanel();initPivot();renderAlerts();}
 function switchTab(t){document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));document.querySelectorAll('.panel').forEach(x=>x.classList.remove('active'));
@@ -189,19 +186,39 @@ function showCityCompanies(city){
   document.getElementById('cityCompanyTable').innerHTML=h;
   switchTab('byCity');}
 
-// ====== 按公司 ======
-function renderCompanyPanel(){const cs=[...new Set(D.companies.map(c=>c.city))];
-  // City checkboxes
-  const g=document.getElementById('cityFilterGroup');
-  let gh='<span style="color:#666">城市:</span><label><input type="checkbox" class="cityCb" value="" checked onchange="toggleCityAll()"> 全部</label>';
-  cs.forEach(c=>{gh+=`<label><input type="checkbox" class="cityCb" value="${c}" checked onchange="onCityChange()"> ${c}</label>`;});
-  g.innerHTML=gh;
-  // Nature checkboxes
-  const ng=document.getElementById('natureFilterGroup');
-  ng.innerHTML='<span style="color:#666">纳税人:</span><label><input type="checkbox" class="natureCb" value="" checked onchange="toggleNatureAll()"> 全部</label><label><input type="checkbox" class="natureCb" value="小规模" checked onchange="onNatureChange()"> 小规模</label><label><input type="checkbox" class="natureCb" value="一般" checked onchange="onNatureChange()"> 一般纳税人</label>';
-  // Company dropdown multi-select
+function renderCompanyPanel(){
+  const cs=[...new Set(D.companies.map(c=>c.city))];
+  buildDropdown('cityFilterContainer','city',[{label:'全部',value:''},{label:'上海',value:'上海'},{label:'北京',value:'北京'},{label:'南京',value:'南京'},{label:'广州',value:'广州'},{label:'成都',value:'成都'},{label:'杭州',value:'杭州'},{label:'武汉',value:'武汉'},{label:'深圳',value:'深圳'}]);
+  buildDropdown('natureFilterContainer','nature',[{label:'全部',value:''},{label:'小规模',value:'小规模'},{label:'一般纳税人',value:'一般'}]);
+  window._cityFilter=new Set(); window._natureFilter=new Set();
+  // Company dropdown
   window._selectedCompanies = new Set();
   updateMsTrigger();renderCompany();}
+function buildDropdown(containerId, id, options){
+  const c=document.getElementById(containerId);
+  c.innerHTML=`<div id="dd${id}Trigger" style="display:flex;align-items:center;gap:6px;padding:8px 14px;border:1px solid #d0d0d0;border-radius:8px;background:#fff;cursor:pointer;font-size:13px;color:#333;min-height:42px" onclick="event.stopPropagation();toggleDropdown('${id}')">
+    <span id="dd${id}Text" style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${options[0].label}</span>
+    <span id="dd${id}Arrow" style="font-size:10px;color:#999;transition:transform .2s">&#9660;</span></div>
+    <div id="dd${id}Dropdown" style="display:none;position:absolute;top:calc(100%+4px);left:0;right:0;max-height:240px;overflow-y:auto;border:1px solid #e0e0e0;border-radius:8px;background:#fff;z-index:1000;box-shadow:0 8px 24px rgba(0,0,0,0.12)">`;
+  options.forEach(o=>{
+    c.innerHTML+=`<label style="display:flex;padding:7px 12px;cursor:pointer;border-bottom:1px solid #f5f5f5;align-items:center;gap:8px;transition:background .15s" onmouseover="this.style.background='#fffbe6'" onmouseout="this.style.background=''">
+      <input type="checkbox" ${o.value===''?'checked':''} onchange="onDropdownCheck('${id}','${o.value}','${o.label}')" style="width:16px;height:16px;cursor:pointer;flex-shrink:0;accent-color:#305496">
+       ${o.label}</label>`;
+  });
+  c.innerHTML+=`</div>`;}
+function toggleDropdown(id){const d=document.getElementById('dd'+id+'Dropdown'),a=document.getElementById('dd'+id+'Arrow');
+  const v=d.style.display==='block';d.style.display=v?'none':'block';a.style.transform=v?'rotate(0deg)':'rotate(180deg)';}
+function onDropdownCheck(id,value,label){
+  const set=id==='city'?window._cityFilter:window._natureFilter;
+  if(value===''){document.querySelectorAll('#dd'+id+'Dropdown input[type=checkbox]').forEach(cb=>cb.checked=false);
+    document.getElementById('dd'+id+'Dropdown').querySelector('input[type=checkbox]').checked=true;set.clear();}
+  else{const all=document.getElementById('dd'+id+'Dropdown').querySelector('input[type=checkbox]');all.checked=false;
+    if(set.has(value))set.delete(value);else set.add(value);
+    const others=document.getElementById('dd'+id+'Dropdown').querySelectorAll('input[type=checkbox]:not([value=""])');
+    all.checked=set.size===others.length;}
+  const text=set.size===0?'全部':set.size+'项已选';
+  document.getElementById('dd'+id+'Text').textContent=set.size===0?(id==='city'?'全部城市':label):text;
+  renderCompany();}
 function updateMsTrigger(){
   const n=window._selectedCompanies.size;
   const text=document.getElementById('msSelectionText');
@@ -233,11 +250,12 @@ function toggleMsCompany(name){
 function selectAllMs(all){document.querySelectorAll('#msDropdownList input[type=checkbox]').forEach(cb=>{
   const n=cb.closest('label').querySelector('span').textContent;if(all)window._selectedCompanies.add(n);else window._selectedCompanies.delete(n);
 });updateMsTrigger();renderCompany();renderMsDropdown();}
-document.addEventListener('click',function(e){const c=document.getElementById('companySearchContainer');
-  if(c&&!c.contains(e.target)){document.getElementById('companyDropdown').style.display='none';document.getElementById('msArrow').style.transform='rotate(0deg)';}});
+document.addEventListener('click',function(e){
+  const cc=document.getElementById('companySearchContainer');const cfc=document.getElementById('cityFilterContainer');const nfc=document.getElementById('natureFilterContainer');
+  if(cc&&!cc.contains(e.target)){document.getElementById('companyDropdown').style.display='none';document.getElementById('msArrow').style.transform='rotate(0deg)';}
+  ['city','nature'].forEach(id=>{const el=document.getElementById('dd'+id+'Dropdown');if(el){const container=document.getElementById(id+'FilterContainer');if(container&&!container.contains(e.target)){el.style.display='none';document.getElementById('dd'+id+'Arrow').style.transform='rotate(0deg)';}}});
+});
 function getSelectedCompanies(){return Array.from(window._selectedCompanies);}
-function onCityChange(){const all=document.querySelector('.cityCb[value=""]');const others=document.querySelectorAll('.cityCb:not([value=""])');
-  all.checked=Array.from(others).every(cb=>cb.checked);renderCompany();}
 function renderCompany(){
   const cityVals=getCityFilter();const nfVals=getNatureFilter();
   const coVals=getSelectedCompanies();
