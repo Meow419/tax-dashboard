@@ -79,11 +79,11 @@ body{background:#fff;padding:20px;min-height:100vh;color:#000}
 
 <div id="panel-byCompany" class="panel"><div class="search-bar">
 <div id="companySearchContainer" style="position:relative;flex:1;min-width:200px">
-  <div style="display:flex;flex-wrap:wrap;gap:4px;padding:4px 8px;border:1px solid #ccc;border-radius:6px;min-height:36px;align-items:center;background:#fff" onclick="document.getElementById('companySearchInput').focus()">
+  <div style="display:flex;flex-wrap:wrap;gap:4px;padding:4px 8px;border:1px solid #ccc;border-radius:6px;min-height:36px;align-items:center;background:#fff;cursor:pointer" onclick="toggleCompanyDropdown()">
     <div id="companyTags" style="display:flex;flex-wrap:wrap;gap:3px"></div>
-    <input type="text" id="companySearchInput" placeholder="搜索公司..." style="border:none;outline:none;flex:1;min-width:80px;font-size:13px;padding:2px" oninput="onCompanySearchInput()" onfocus="showCompanyDropdown()" onblur="setTimeout(hideCompanyDropdown,200)">
+    <input type="text" id="companySearchInput" placeholder="搜索公司..." style="border:none;outline:none;flex:1;min-width:80px;font-size:13px;padding:2px" oninput="filterCompanyDropdown()" onclick="event.stopPropagation();showCompanyDropdown()">
   </div>
-  <div id="companyDropdown" style="display:none;position:absolute;top:100%;left:0;right:0;max-height:200px;overflow-y:auto;border:1px solid #ccc;border-radius:6px;background:#fff;z-index:100;box-shadow:0 4px 12px rgba(0,0,0,0.1);font-size:12px"></div>
+  <div id="companyDropdown" style="display:none;position:absolute;top:100%;left:0;right:0;max-height:260px;overflow-y:auto;border:1px solid #ccc;border-radius:6px;background:#fff;z-index:100;box-shadow:0 4px 12px rgba(0,0,0,0.1);font-size:12px"></div>
 </div>
 <div id="cityFilterGroup" style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;font-size:12px;margin-top:4px"></div>
 <div id="natureFilterGroup" style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;font-size:12px"></div>
@@ -199,24 +199,35 @@ function buildCompanyTags(){
     container.innerHTML+=`<span style="display:inline-flex;align-items:center;gap:2px;padding:1px 6px;background:#fff5cc;border:1px solid #e6daa0;border-radius:4px;font-size:11px">${name}<span style="cursor:pointer;font-size:14px;line-height:1;margin-left:2px;color:#999" onclick="removeCompanyTag('${name.replace(/'/g,"\\'")}')">&times;</span></span>`;
   });
   renderCompany();}
-function removeCompanyTag(name){window._selectedCompanies.delete(name);buildCompanyTags();}
-function onCompanySearchInput(){
-  const q=document.getElementById('companySearchInput').value.toLowerCase();
-  showCompanyDropdown(q);}
-function showCompanyDropdown(q){
-  const dropdown=document.getElementById('companyDropdown');
-  const query=(q||document.getElementById('companySearchInput').value||'').toLowerCase();
-  let matches=D.companies.filter(c=>c.name.toLowerCase().includes(query)&&!window._selectedCompanies.has(c.name));
-  if(query)matches=matches.filter(c=>c.name.toLowerCase().includes(query));
-  if(matches.length===0){dropdown.innerHTML='<div style="padding:8px;color:#999;text-align:center">无匹配</div>';dropdown.style.display='block';return;}
-  let h='<div style="padding:4px 8px;background:#f9f9f9;font-size:11px;color:#666;border-bottom:1px solid #eee">共'+matches.length+'家可添加</div>';
-  matches.slice(0,50).forEach(c=>{
-    h+=`<div style="padding:6px 10px;cursor:pointer;border-bottom:1px solid #eee;display:flex;justify-content:space-between" onmouseover="this.style.background='#fff5cc'" onmouseout="this.style.background=''" onclick="selectCompanyFromDropdown('${c.name.replace(/'/g,"\\'")}')"><span>${c.name}</span><span style="color:#999;font-size:11px">${c.city}</span></div>`;
-  });
-  dropdown.innerHTML=h;dropdown.style.display='block';}
-function selectCompanyFromDropdown(name){window._selectedCompanies.add(name);document.getElementById('companySearchInput').value='';document.getElementById('companyDropdown').style.display='none';buildCompanyTags();}
-function showCompanyDropdown(){const q=document.getElementById('companySearchInput').value;if(q)onCompanySearchInput();}
+function toggleCompanyDropdown(){
+  const d=document.getElementById('companyDropdown');
+  if(d.style.display==='block'){hideCompanyDropdown();}else{showCompanyDropdown();}}
+function showCompanyDropdown(){
+  const d=document.getElementById('companyDropdown');
+  renderCompanyDropdown('');d.style.display='block';}
 function hideCompanyDropdown(){document.getElementById('companyDropdown').style.display='none';}
+function filterCompanyDropdown(){
+  const q=document.getElementById('companySearchInput').value.toLowerCase();
+  renderCompanyDropdown(q);}
+function renderCompanyDropdown(q){
+  const d=document.getElementById('companyDropdown');
+  const list=D.companies.filter(c=>!q||c.name.toLowerCase().includes(q));
+  let h='<div style="padding:4px 8px;background:#f9f9f9;font-size:11px;color:#666;border-bottom:1px solid #eee">已选'+window._selectedCompanies.size+'家 | 共'+list.length+'家</div>';
+  list.slice(0,80).forEach(c=>{
+    const sel=window._selectedCompanies.has(c.name);
+    h+=`<label style="display:flex;padding:4px 8px;cursor:pointer;border-bottom:1px solid #f0f0f0;align-items:center;gap:6px" onmouseover="this.style.background='#fff5cc'" onmouseout="this.style.background=''">
+      <input type="checkbox" ${sel?'checked':''} onchange="toggleCompanySel('${c.name.replace(/'/g,"\\'")}')" style="margin:0">
+      <span style="flex:1">${c.name}</span><span style="color:#999;font-size:11px">${c.city}</span></label>`;
+  });
+  d.innerHTML=h;}
+function toggleCompanySel(name){
+  if(window._selectedCompanies.has(name)){window._selectedCompanies.delete(name);}
+  else{window._selectedCompanies.add(name);}
+  buildCompanyTags();}
+// Click outside to close
+document.addEventListener('click',function(e){
+  const container=document.getElementById('companySearchContainer');
+  if(container&&!container.contains(e.target))hideCompanyDropdown();});
 function getSelectedCompanies(){return Array.from(window._selectedCompanies);}
 function onCityChange(){const all=document.querySelector('.cityCb[value=""]');const others=document.querySelectorAll('.cityCb:not([value=""])');
   all.checked=Array.from(others).every(cb=>cb.checked);renderCompany();}
