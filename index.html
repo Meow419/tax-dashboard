@@ -79,9 +79,17 @@ body{background:#fff;padding:20px;min-height:100vh;color:#000}
 
 <div id="panel-byCompany" class="panel"><div class="search-bar">
 <input type="text" id="companySearch" placeholder="搜索公司..." oninput="renderCompany()">
-<select id="cityFilter" onchange="renderCompany()"><option value="">全部城市</option></select>
-<select id="sortBy" onchange="renderCompany()"><option value="income">按收入排序</option><option value="rate">按税负率</option><option value="name">按名称</option></select>
-<select id="natureFilter" onchange="renderCompany()"><option value="">全部</option><option value="小规模">小规模</option><option value="一般">一般纳税人</option></select></div>
+<div id="cityFilterGroup" style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;font-size:12px">
+  <span style="color:#666">城市:</span>
+  <label><input type="checkbox" class="cityCb" value="" checked onchange="toggleCityAll()"> 全部</label>
+</div>
+<div id="natureFilterGroup" style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;font-size:12px">
+  <span style="color:#666">纳税人:</span>
+  <label><input type="checkbox" class="natureCb" value="" checked onchange="toggleNatureAll()"> 全部</label>
+  <label><input type="checkbox" class="natureCb" value="小规模" checked onchange="onNatureChange()"> 小规模</label>
+  <label><input type="checkbox" class="natureCb" value="一般" checked onchange="onNatureChange()"> 一般纳税人</label>
+</div>
+<select id="sortBy" onchange="renderCompany()"><option value="income">按收入排序</option><option value="rate">按税负率</option><option value="name">按名称</option></select></div>
 <div class="chart-card"><div id="companyTable"></div></div></div>
 
 <div id="panel-small" class="panel"><div class="kpi-row" id="smallKpiRow"></div>
@@ -109,7 +117,12 @@ body{background:#fff;padding:20px;min-height:100vh;color:#000}
 
 <script>
 let D=null; const M=['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'];
-function fm(v){if(v===null||v===undefined)return '0';return Math.round(v).toString().replace(/\B(?=(\d{3})+(?!\d))/g,',')}
+function fm(v){if(v===null||v===undefined)return'0.00';return Number(v).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g,',')}
+function getCityFilter(){const cbs=document.querySelectorAll('.cityCb:checked');const vals=[];cbs.forEach(cb=>{if(cb.value)vals.push(cb.value);});return vals;}
+function getNatureFilter(){const cbs=document.querySelectorAll('.natureCb:checked');const vals=[];cbs.forEach(cb=>{if(cb.value)vals.push(cb.value);});return vals;}
+function toggleCityAll(){const all=document.querySelector('.cityCb[value=""]');const checked=all.checked;document.querySelectorAll('.cityCb').forEach(cb=>cb.checked=checked);renderCompany();}
+function toggleNatureAll(){const all=document.querySelector('.natureCb[value=""]');const checked=all.checked;document.querySelectorAll('.natureCb').forEach(cb=>cb.checked=checked);renderCompany();}
+function onNatureChange(){const all=document.querySelector('.natureCb[value=""]');const others=document.querySelectorAll('.natureCb:not([value=""])');const allChecked=Array.from(others).every(cb=>cb.checked);all.checked=allChecked;renderCompany();}
 async function init(){const r=await fetch('data.json?v=20260724');D=await r.json();document.getElementById('updateTime').textContent='数据更新：2026-07-23';
   renderOverview();renderCityPanel();renderCompanyPanel();renderSmallPanel();initPivot();renderAlerts();}
 function switchTab(t){document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));document.querySelectorAll('.panel').forEach(x=>x.classList.remove('active'));
@@ -170,11 +183,22 @@ function showCityCompanies(city){
 
 // ====== 按公司 ======
 function renderCompanyPanel(){const cs=[...new Set(D.companies.map(c=>c.city))];
-  document.getElementById('cityFilter').innerHTML='<option value="">全部城市</option>'+cs.map(c=>`<option value="${c}">${c}</option>`).join('');renderCompany();}
+  const g=document.getElementById('cityFilterGroup');
+  let h='<span style="color:#666">城市:</span><label><input type="checkbox" class="cityCb" value="" checked onchange="toggleCityAll()"> 全部</label>';
+  cs.forEach(c=>{h+=`<label><input type="checkbox" class="cityCb" value="${c}" checked onchange="onCityChange()"> ${c}</label>`;});
+  g.innerHTML=h;renderCompany();}
+function onCityChange(){const all=document.querySelector('.cityCb[value=""]');const others=document.querySelectorAll('.cityCb:not([value=""])');
+  all.checked=Array.from(others).every(cb=>cb.checked);renderCompany();}
 function renderCompany(){
-  const q=(document.getElementById('companySearch').value||'').toLowerCase(),cf=document.getElementById('cityFilter').value,
-    sf=document.getElementById('sortBy').value,nf=document.getElementById('natureFilter').value;
-  let list=D.companies.filter(c=>{if(cf&&c.city!==cf)return false;if(q&&!c.name.toLowerCase().includes(q))return false;if(nf&&!c.nature.includes(nf))return false;return true;});
+  const q=(document.getElementById('companySearch').value||'').toLowerCase();
+  const cityVals=getCityFilter();const nfVals=getNatureFilter();
+  const sf=document.getElementById('sortBy').value;
+  let list=D.companies.filter(c=>{
+    if(cityVals.length>0 && !cityVals.includes(c.city))return false;
+    if(q&&!c.name.toLowerCase().includes(q))return false;
+    if(nfVals.length>0){const match=nfVals.some(v=>c.nature.includes(v));if(!match)return false;}
+    return true;
+  });
   if(sf==='income')list.sort((a,b)=>b.income-a.income);else if(sf==='rate')list.sort((a,b)=>b.total_rate-a.total_rate);else list.sort((a,b)=>a.name.localeCompare(b.name));
   let h='<table class="data-table"><tr><th>公司名称</th><th>城市</th><th>性质</th><th>收入</th><th>增值税</th><th>税费合计</th><th>增值税税负</th><th>综合税负率</th><th>操作</th></tr>';
   list.forEach(c=>{const al=D.alerts[c.name];
