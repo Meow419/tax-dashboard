@@ -78,13 +78,13 @@ body{background:#fff;padding:20px;min-height:100vh;color:#000}
 <div class="chart-card" id="cityCompanyCard" style="display:none"><h3 id="cityCompanyTitle"></h3><div id="cityCompanyTable"></div></div></div>
 
 <div id="panel-byCompany" class="panel"><div class="search-bar">
-<input type="text" id="companySearch" placeholder="搜索公司名称..." oninput="filterCompanyList()">
-<div style="display:flex;gap:4px;flex-wrap:wrap;align-items:center;font-size:12px">
-  <span style="color:#666;font-size:12px">已选 <span id="selectedCount">0</span> 家</span>
-  <span class="clickable" onclick="clearCompanySel()" style="font-size:11px">清除</span>
-  <span class="clickable" onclick="selectAllCompany()" style="font-size:11px">全选</span>
+<div id="companySearchContainer" style="position:relative;flex:1;min-width:200px">
+  <div style="display:flex;flex-wrap:wrap;gap:4px;padding:4px 8px;border:1px solid #ccc;border-radius:6px;min-height:36px;align-items:center;background:#fff" onclick="document.getElementById('companySearchInput').focus()">
+    <div id="companyTags" style="display:flex;flex-wrap:wrap;gap:3px"></div>
+    <input type="text" id="companySearchInput" placeholder="搜索公司..." style="border:none;outline:none;flex:1;min-width:80px;font-size:13px;padding:2px" oninput="onCompanySearchInput()" onfocus="showCompanyDropdown()" onblur="setTimeout(hideCompanyDropdown,200)">
+  </div>
+  <div id="companyDropdown" style="display:none;position:absolute;top:100%;left:0;right:0;max-height:200px;overflow-y:auto;border:1px solid #ccc;border-radius:6px;background:#fff;z-index:100;box-shadow:0 4px 12px rgba(0,0,0,0.1);font-size:12px"></div>
 </div>
-<div id="companyCheckboxList" style="max-height:120px;overflow-y:auto;border:1px solid #ddd;border-radius:6px;padding:4px;display:flex;flex-wrap:wrap;gap:2px;font-size:12px;background:#fff"></div>
 <div id="cityFilterGroup" style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;font-size:12px;margin-top:4px"></div>
 <div id="natureFilterGroup" style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;font-size:12px"></div>
 <select id="sortBy" onchange="renderCompany()"><option value="income">按收入排序</option><option value="rate">按税负率</option><option value="name">按名称</option></select></div>
@@ -189,31 +189,40 @@ function renderCompanyPanel(){const cs=[...new Set(D.companies.map(c=>c.city))];
   // Nature checkboxes
   const ng=document.getElementById('natureFilterGroup');
   ng.innerHTML='<span style="color:#666">纳税人:</span><label><input type="checkbox" class="natureCb" value="" checked onchange="toggleNatureAll()"> 全部</label><label><input type="checkbox" class="natureCb" value="小规模" checked onchange="onNatureChange()"> 小规模</label><label><input type="checkbox" class="natureCb" value="一般" checked onchange="onNatureChange()"> 一般纳税人</label>';
-  // Company checkboxes
-  buildCompanyCheckboxes();renderCompany();}
-function buildCompanyCheckboxes(){
-  const q=(document.getElementById('companySearch').value||'').toLowerCase();
-  const list=D.companies.filter(c=>!q||c.name.toLowerCase().includes(q));
-  let h='';list.forEach(c=>{h+=`<label style="padding:1px 3px;white-space:nowrap"><input type="checkbox" class="coCb" value="${c.name}" checked onchange="onCompanyChange()"> ${c.name}</label>`;});
-  document.getElementById('companyCheckboxList').innerHTML=h;
-  updateSelectedCount();}
-function filterCompanyList(){buildCompanyCheckboxes();renderCompany();}
-function onCompanyChange(){updateSelectedCount();renderCompany();}
-function updateSelectedCount(){const n=document.querySelectorAll('.coCb:checked').length;document.getElementById('selectedCount').textContent=n;}
-function clearCompanySel(){document.querySelectorAll('.coCb').forEach(cb=>cb.checked=false);onCompanyChange();}
-function selectAllCompany(){document.querySelectorAll('.coCb').forEach(cb=>cb.checked=true);onCompanyChange();}
-function getSelectedCompanies(){return Array.from(document.querySelectorAll('.coCb:checked')).map(cb=>cb.value);}
+  // Company tag-input multi-select
+  window._selectedCompanies = new Set(D.companies.map(c=>c.name));
+  buildCompanyTags();renderCompany();}
+function buildCompanyTags(){
+  const container=document.getElementById('companyTags');
+  container.innerHTML='';
+  window._selectedCompanies.forEach(name=>{
+    container.innerHTML+=`<span style="display:inline-flex;align-items:center;gap:2px;padding:1px 6px;background:#fff5cc;border:1px solid #e6daa0;border-radius:4px;font-size:11px">${name}<span style="cursor:pointer;font-size:14px;line-height:1;margin-left:2px;color:#999" onclick="removeCompanyTag('${name.replace(/'/g,"\\'")}')">&times;</span></span>`;
+  });
+  renderCompany();}
+function removeCompanyTag(name){window._selectedCompanies.delete(name);buildCompanyTags();}
+function onCompanySearchInput(){
+  const q=document.getElementById('companySearchInput').value.toLowerCase();
+  const dropdown=document.getElementById('companyDropdown');
+  if(!q){dropdown.style.display='none';return;}
+  const matches=D.companies.filter(c=>c.name.toLowerCase().includes(q)&&!window._selectedCompanies.has(c.name));
+  if(matches.length===0){dropdown.style.display='none';return;}
+  let h='';matches.slice(0,30).forEach(c=>{
+    h+=`<div style="padding:6px 10px;cursor:pointer;border-bottom:1px solid #eee" onmouseover="this.style.background='#fff5cc'" onmouseout="this.style.background=''" onclick="selectCompanyFromDropdown('${c.name.replace(/'/g,"\\'")}')">${c.name} <span style="color:#999">${c.city}</span></div>`;
+  });
+  dropdown.innerHTML=h;dropdown.style.display='block';}
+function selectCompanyFromDropdown(name){window._selectedCompanies.add(name);document.getElementById('companySearchInput').value='';document.getElementById('companyDropdown').style.display='none';buildCompanyTags();}
+function showCompanyDropdown(){const q=document.getElementById('companySearchInput').value;if(q)onCompanySearchInput();}
+function hideCompanyDropdown(){document.getElementById('companyDropdown').style.display='none';}
+function getSelectedCompanies(){return Array.from(window._selectedCompanies);}
 function onCityChange(){const all=document.querySelector('.cityCb[value=""]');const others=document.querySelectorAll('.cityCb:not([value=""])');
   all.checked=Array.from(others).every(cb=>cb.checked);renderCompany();}
 function renderCompany(){
-  const q=(document.getElementById('companySearch').value||'').toLowerCase();
   const cityVals=getCityFilter();const nfVals=getNatureFilter();
   const coVals=getSelectedCompanies();
   const sf=document.getElementById('sortBy').value;
   let list=D.companies.filter(c=>{
     if(cityVals.length>0 && !cityVals.includes(c.city))return false;
     if(coVals.length>0 && !coVals.includes(c.name))return false;
-    if(q && !c.name.toLowerCase().includes(q))return false;
     if(nfVals.length>0){const match=nfVals.some(v=>c.nature.includes(v));if(!match)return false;}
     return true;
   });
