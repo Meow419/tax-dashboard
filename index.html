@@ -8,13 +8,13 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Microsoft YaHei','宋体',sans-serif}
 body{background:#fff;padding:20px;min-height:100vh;color:#000}
-.header{background:#000;color:#fff;padding:24px 32px;border-radius:12px;margin-bottom:16px}
+.header{background:#fff5cc;color:#000;padding:24px 32px;border-radius:12px;margin-bottom:16px;border:1px solid #e6daa0}
 .header h1{font-size:24px;font-weight:bold}
-.header p{font-size:13px;opacity:0.7;margin-top:4px}
+.header p{font-size:13px;color:#666;margin-top:4px}
 .tabs{display:flex;gap:4px;margin-bottom:16px;background:#fff;border-radius:10px;padding:4px;box-shadow:0 0 0 1px #ddd;flex-wrap:wrap}
 .tab{padding:10px 20px;border-radius:8px;cursor:pointer;font-size:13px;color:#666;transition:all .2s;border:none;background:none}
 .tab:hover{background:#fff5cc}
-.tab.active{background:#000;color:#fff;font-weight:bold}
+.tab.active{background:#fff5cc;color:#000;font-weight:bold;border:1px solid #e6daa0}
 .panel{display:none}
 .panel.active{display:block}
 .kpi-row{display:flex;gap:12px;margin-bottom:16px;flex-wrap:wrap}
@@ -31,7 +31,7 @@ body{background:#fff;padding:20px;min-height:100vh;color:#000}
 .chart-card.full{grid-column:1/-1}
 .chart-card.full .chart-box{height:320px}
 .data-table{width:100%;border-collapse:collapse;font-size:12px}
-.data-table th{background:#000;color:#fff;padding:7px 5px;text-align:center;font-weight:bold;border:1px solid #333}
+.data-table th{background:#fff5cc;color:#000;padding:7px 5px;text-align:center;font-weight:bold;border:1px solid #ccc}
 .data-table td{padding:5px;text-align:right;border:1px solid #ccc}
 .data-table td:first-child,.data-table th:first-child{text-align:left}
 .data-table tr:nth-child(even){background:#f9f9f9}
@@ -44,7 +44,7 @@ body{background:#fff;padding:20px;min-height:100vh;color:#000}
 .search-bar input{padding:8px 12px;border:1px solid #ccc;border-radius:6px;font-size:13px;flex:1;min-width:160px}
 .search-bar select{padding:8px 12px;border:1px solid #ccc;border-radius:6px;font-size:13px}
 .alert-list{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 0 0 1px #ddd}
-.alert-head{display:flex;padding:10px 16px;background:#000;color:#fff;font-weight:bold;font-size:13px}
+.alert-head{display:flex;padding:10px 16px;background:#fff5cc;color:#000;font-weight:bold;font-size:13px;border-bottom:1px solid #e6daa0}
 .alert-head span{flex:1}
 .alert-row{display:flex;padding:8px 16px;border-bottom:1px solid #eee;font-size:13px;cursor:pointer}
 .alert-row:hover{background:#fff5cc}
