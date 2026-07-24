@@ -1,8 +1,5 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html><html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>2026年税费分析看板</title>
 <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
 <style>
@@ -18,495 +15,247 @@ body{background:#fff;padding:20px;min-height:100vh;color:#000}
 .panel{display:none}
 .panel.active{display:block}
 .kpi-row{display:flex;gap:12px;margin-bottom:16px;flex-wrap:wrap}
-.kpi-card{flex:1;min-width:150px;background:#fff;border-radius:10px;padding:16px 20px;box-shadow:0 0 0 1px #ddd;border-left:4px solid #000}
-.kpi-card .lbl{font-size:12px;color:#666;margin-bottom:2px}
-.kpi-card .val{font-size:22px;font-weight:bold;color:#000}
-.kpi-card .sub{font-size:11px;color:#999;margin-top:2px}
-.kpi-card.warn{border-left-color:#c00}
-.kpi-card.ok{border-left-color:#000}
+.kpi-card{flex:1;min-width:140px;background:#fff;border-radius:10px;padding:14px 16px;box-shadow:0 0 0 1px #ddd;border-left:4px solid #000}
+.kpi-card .lbl{font-size:11px;color:#666;margin-bottom:2px}
+.kpi-card .val{font-size:16px;font-weight:bold;color:#000}
+.kpi-card .sub{font-size:10px;color:#999;margin-top:2px}
 .chart-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
 .chart-card{background:#fff;border-radius:10px;padding:16px;box-shadow:0 0 0 1px #ddd}
 .chart-card h3{font-size:14px;color:#000;margin-bottom:10px;padding-left:8px;border-left:3px solid #000}
 .chart-card .chart-box{width:100%;height:280px}
 .chart-card.full{grid-column:1/-1}
 .chart-card.full .chart-box{height:320px}
-.data-table{width:100%;border-collapse:collapse;font-size:12px}
-.data-table th{background:#fff5cc;color:#000;padding:7px 5px;text-align:center;font-weight:bold;border:1px solid #ccc}
-.data-table td{padding:5px;text-align:right;border:1px solid #ccc}
+.data-table{width:100%;border-collapse:collapse;font-size:11px}
+.data-table th{background:#fff5cc;color:#000;padding:6px 4px;text-align:center;font-weight:bold;border:1px solid #ccc;white-space:nowrap}
+.data-table td{padding:4px;text-align:right;border:1px solid #ccc}
 .data-table td:first-child,.data-table th:first-child{text-align:left}
 .data-table tr:nth-child(even){background:#f9f9f9}
 .data-table tr:hover{background:#fffbe6}
-.data-table .warn-row{background:#fff5cc!important}
-.data-table .alert-row{background:#ffe0e0!important}
 .clickable{cursor:pointer;color:#000;text-decoration:underline}
 .clickable:hover{color:#c00}
 .search-bar{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
 .search-bar input{padding:8px 12px;border:1px solid #ccc;border-radius:6px;font-size:13px;flex:1;min-width:160px}
 .search-bar select{padding:8px 12px;border:1px solid #ccc;border-radius:6px;font-size:13px}
 .alert-list{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 0 0 1px #ddd}
-.alert-head{display:flex;padding:10px 16px;background:#fff5cc;color:#000;font-weight:bold;font-size:13px;border-bottom:1px solid #e6daa0}
+.alert-head{display:flex;padding:8px 12px;background:#fff5cc;color:#000;font-weight:bold;font-size:12px;border-bottom:1px solid #e6daa0}
 .alert-head span{flex:1}
-.alert-row{display:flex;padding:8px 16px;border-bottom:1px solid #eee;font-size:13px;cursor:pointer}
+.alert-row{display:flex;padding:6px 12px;border-bottom:1px solid #eee;font-size:12px;cursor:pointer}
 .alert-row:hover{background:#fff5cc}
 .alert-row span{flex:1}
-.alert-row .badge{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;color:#fff}
+.alert-row .badge{display:inline-block;padding:2px 6px;border-radius:3px;font-size:10px;color:#fff}
 .badge-red{background:#c00}
 .badge-yellow{background:#cc0;color:#000}
 .modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:1000;justify-content:center;align-items:center}
 .modal.show{display:flex}
-.modal-content{background:#fff;border-radius:12px;width:92%;max-width:900px;max-height:85vh;overflow:auto;padding:24px;box-shadow:0 0 0 1px #000}
+.modal-content{background:#fff;border-radius:12px;width:95%;max-width:1000px;max-height:85vh;overflow:auto;padding:24px;box-shadow:0 0 0 1px #000}
 .modal-content h2{font-size:18px;color:#000;margin-bottom:16px}
 .close-btn{float:right;font-size:24px;cursor:pointer;color:#999;border:none;background:none}
 .close-btn:hover{color:#000}
+.cmb{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.cmb button{padding:6px 14px;border:1px solid #ccc;border-radius:6px;cursor:pointer;background:#fff;font-size:12px}
+.cmb button:hover{background:#fff5cc}
+.cmb button.act{background:#000;color:#fff;border-color:#000}
 .footer{text-align:center;color:#999;font-size:12px;padding:16px;margin-top:16px}
-@media(max-width:768px){.chart-grid{grid-template-columns:1fr}.kpi-card{min-width:45%}}
-</style>
-</head>
+@media(max-width:768px){.chart-grid{grid-template-columns:1fr}.kpi-card{min-width:42%}}
+</style></head>
 <body>
-<div class="header">
-  <h1>2026年税费分析看板</h1>
-  <p>数据来源：2026年税费统计分析表 | 单位：万元 | <span id="updateTime"></span></p>
-</div>
-
+<div class="header"><h1>2026年税费分析看板</h1><p>单位：元 | <span id="updateTime"></span></p></div>
 <div class="tabs">
-  <button class="tab active" onclick="switchTab('overview')">总览</button>
-  <button class="tab" onclick="switchTab('byCity')">按城市</button>
-  <button class="tab" onclick="switchTab('byCompany')">按公司</button>
-  <button class="tab" onclick="switchTab('small')">小规模纳税人</button>
-  <button class="tab" onclick="switchTab('pivot')">数据透视</button>
-  <button class="tab" onclick="switchTab('alerts')">预警列表</button>
+<button class="tab active" onclick="switchTab('overview')">总览</button>
+<button class="tab" onclick="switchTab('byCity')">按城市</button>
+<button class="tab" onclick="switchTab('byCompany')">按公司</button>
+<button class="tab" onclick="switchTab('small')">小规模纳税人</button>
+<button class="tab" onclick="switchTab('pivot')">数据透视</button>
+<button class="tab" onclick="switchTab('alerts')">预警</button>
 </div>
+<div id="panel-overview" class="panel active"><div class="kpi-row" id="kpiRow"></div>
+<div class="chart-grid"><div class="chart-card full"><h3>月度收入趋势（万元）</h3><div class="chart-box" id="chartTrend"></div></div>
+<div class="chart-card"><h3>各城市收入 vs 税费</h3><div class="chart-box" id="chartCity"></div></div>
+<div class="chart-card"><h3>综合税负率排名</h3><div class="chart-box" id="chartRate"></div></div></div></div>
 
-<!-- 总览 -->
-<div id="panel-overview" class="panel active">
-  <div class="kpi-row" id="kpiRow"></div>
-  <div class="chart-grid">
-    <div class="chart-card full"><h3>月度收入趋势</h3><div class="chart-box" id="chartTrend"></div></div>
-    <div class="chart-card"><h3>各城市收入 vs 税费</h3><div class="chart-box" id="chartCity"></div></div>
-    <div class="chart-card"><h3>综合税负率排名</h3><div class="chart-box" id="chartRate"></div></div>
-  </div>
-</div>
+<div id="panel-byCity" class="panel"><div class="kpi-row" id="cityKpiRow"></div>
+<div class="chart-card" style="margin-bottom:16px"><h3>各城市年度数据</h3><div id="cityTable"></div></div>
+<div class="chart-card" id="cityCompanyCard" style="display:none"><h3 id="cityCompanyTitle"></h3><div id="cityCompanyTable"></div></div></div>
 
-<!-- 按城市 -->
-<div id="panel-byCity" class="panel">
-  <div class="kpi-row" id="cityKpiRow"></div>
-  <div class="chart-card" style="margin-bottom:16px"><h3>各城市年度数据</h3><div id="cityTable"></div></div>
-  <div class="chart-card"><h3 id="cityDetailTitle">点击城市查看月度明细</h3><div class="chart-box" id="chartCityMonth"></div></div>
-</div>
+<div id="panel-byCompany" class="panel"><div class="search-bar">
+<input type="text" id="companySearch" placeholder="搜索公司..." oninput="renderCompany()">
+<select id="cityFilter" onchange="renderCompany()"><option value="">全部城市</option></select>
+<select id="sortBy" onchange="renderCompany()"><option value="income">按收入排序</option><option value="rate">按税负率</option><option value="name">按名称</option></select>
+<select id="natureFilter" onchange="renderCompany()"><option value="">全部</option><option value="小规模">小规模</option><option value="一般">一般纳税人</option></select></div>
+<div class="chart-card"><div id="companyTable"></div></div></div>
 
-<!-- 按公司 -->
-<div id="panel-byCompany" class="panel">
-  <div class="search-bar">
-    <input type="text" id="companySearch" placeholder="搜索公司名称..." oninput="renderCompany()">
-    <select id="cityFilter" onchange="renderCompany()"><option value="">全部城市</option></select>
-    <select id="sortBy" onchange="renderCompany()">
-      <option value="income">按收入排序</option><option value="rate">按税负率排序</option><option value="name">按名称排序</option>
-    </select>
-    <select id="natureFilter" onchange="renderCompany()">
-      <option value="">全部纳税人</option><option value="小规模">小规模</option><option value="一般">一般纳税人</option>
-    </select>
-  </div>
-  <div class="chart-card"><div id="companyTable"></div></div>
-</div>
+<div id="panel-small" class="panel"><div class="kpi-row" id="smallKpiRow"></div>
+<div class="chart-grid"><div class="chart-card"><h3>小规模 vs 一般纳税人税负</h3><div class="chart-box" id="chartSmallCompare"></div></div>
+<div class="chart-card"><h3>小规模城市分布</h3><div class="chart-box" id="chartSmallCity"></div></div></div>
+<div class="chart-card"><h3>小规模纳税人清单</h3><div class="search-bar"><input type="text" id="smallSearch" placeholder="搜索..." oninput="renderSmallDetail()"></div>
+<div style="overflow-x:auto" id="smallTable"></div></div></div>
 
-<!-- 小规模纳税人 -->
-<div id="panel-small" class="panel">
-  <div class="kpi-row" id="smallKpiRow"></div>
-  <div class="chart-grid">
-    <div class="chart-card"><h3>小规模 vs 一般纳税人税负对比</h3><div class="chart-box" id="chartSmallCompare"></div></div>
-    <div class="chart-card"><h3>小规模纳税人城市分布</h3><div class="chart-box" id="chartSmallCity"></div></div>
-  </div>
-  <div class="chart-card"><h3>小规模纳税人清单</h3>
-    <div class="search-bar" style="margin-top:8px">
-      <input type="text" id="smallSearch" placeholder="搜索..." oninput="renderSmallDetail()">
-    </div>
-    <div id="smallTable"></div>
-  </div>
-</div>
+<div id="panel-pivot" class="panel"><div class="chart-card"><h3>数据透视表</h3>
+<div class="search-bar">
+<select id="pivotRow" onchange="renderPivot()"><option value="city">行：按城市</option><option value="nature">行：按纳税人性质</option><option value="company">行：按公司</option></select>
+<select id="pivotCol" onchange="renderPivot()"><option value="month">列：按月份</option><option value="total">列：汇总</option></select>
+<select id="pivotVal" onchange="renderPivot()"><option value="income">值：收入</option><option value="vat">值：增值税</option><option value="total_tax">值：税费合计</option><option value="vat_rate">值：增值税税负(%)</option><option value="total_rate">值：综合税负率(%)</option></select>
+<select id="pivotCity" onchange="renderPivot()"><option value="">全部城市</option></select>
+<select id="pivotNature" onchange="renderPivot()"><option value="">全部</option><option value="小规模">仅小规模</option><option value="一般">仅一般纳税人</option></select>
+<label style="font-size:12px"><input type="checkbox" id="pivotSort" onchange="renderPivot()" checked> 排序</label></div>
+<div style="overflow-x:auto" id="pivotTable"></div><div id="pivotSummary" style="margin-top:8px;font-size:12px;color:#666"></div></div></div>
 
-<!-- 数据透视 -->
-<div id="panel-pivot" class="panel">
-  <div class="chart-card">
-    <h3>数据透视表</h3>
-    <div class="search-bar" style="margin-bottom:12px;flex-wrap:wrap">
-      <select id="pivotRow" onchange="renderPivot()">
-        <option value="city">行：按城市</option>
-        <option value="nature">行：按纳税人性质</option>
-        <option value="company">行：按公司</option>
-      </select>
-      <select id="pivotCol" onchange="renderPivot()">
-        <option value="month">列：按月份</option>
-        <option value="total">列：汇总</option>
-      </select>
-      <select id="pivotVal" onchange="renderPivot()">
-        <option value="income">值：收入(万)</option>
-        <option value="vat">值：增值税(万)</option>
-        <option value="total_tax">值：税费合计(万)</option>
-        <option value="vat_rate">值：增值税税负(%)</option>
-        <option value="total_rate">值：综合税负率(%)</option>
-      </select>
-      <select id="pivotCity" onchange="renderPivot()">
-        <option value="">全部城市</option>
-      </select>
-      <select id="pivotNature" onchange="renderPivot()">
-        <option value="">全部纳税人</option>
-        <option value="小规模">仅小规模</option>
-        <option value="一般">仅一般纳税人</option>
-      </select>
-      <span style="font-size:13px;color:#666;line-height:32px">
-        <label><input type="checkbox" id="pivotSort" onchange="renderPivot()" checked> 按值排序</label>
-      </span>
-    </div>
-    <div style="overflow-x:auto" id="pivotTable"></div>
-    <div id="pivotSummary" style="margin-top:12px;font-size:13px;color:#666"></div>
-  </div>
-</div>
-<div id="panel-alerts" class="panel">
-  <div class="search-bar"><input type="text" id="alertSearch" placeholder="搜索预警公司..." oninput="renderAlerts()"></div>
-  <div class="alert-list" id="alertList"></div>
-</div>
+<div id="panel-alerts" class="panel"><div class="search-bar"><input type="text" id="alertSearch" placeholder="搜索..." oninput="renderAlerts()"></div>
+<div class="alert-list"><div class="alert-head"><span>公司</span><span>性质</span><span>次数</span><span>说明</span><span>月份</span></div><div id="alertList"></div></div></div>
 
-<!-- 模态框 -->
-<div class="modal" id="companyModal">
-  <div class="modal-content">
-    <button class="close-btn" onclick="closeModal()">&times;</button>
-    <h2 id="modalTitle">公司月度明细</h2>
-    <div id="modalBody"></div>
-  </div>
-</div>
-
-<div class="footer">自动生成 | 2026年税费统计分析表_终版7.23_v2</div>
+<div class="modal" id="companyModal"><div class="modal-content"><button class="close-btn" onclick="closeModal()">&times;</button>
+<h2 id="modalTitle">月度明细</h2><div id="modalBody"></div></div></div>
+<div class="footer">单位：元 | 自动生成</div>
 
 <script>
-let D = null;
-const M = ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'];
+let D=null; const M=['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'];
+function fm(v){if(v===null||v===undefined)return '0';return Math.round(v).toString().replace(/\B(?=(\d{3})+(?!\d))/g,',')}
+async function init(){const r=await fetch('data.json');D=await r.json();document.getElementById('updateTime').textContent='数据更新：2026-07-23';
+  renderOverview();renderCityPanel();renderCompanyPanel();renderSmallPanel();initPivot();renderAlerts();}
+function switchTab(t){document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));document.querySelectorAll('.panel').forEach(x=>x.classList.remove('active'));
+  document.querySelector(`.tab[onclick*="'${t}'"]`).classList.add('active');document.getElementById(`panel-${t}`).classList.add('active');
+  if(t==='byCity'||t==='small') setTimeout(()=>window.dispatchEvent(new Event('resize')),150);}
 
-async function init(){
-  const r = await fetch('data.json');
-  D = await r.json();
-  document.getElementById('updateTime').textContent = '数据更新：2026-07-23';
-  renderOverview(); renderCityPanel(); renderCompanyPanel(); renderSmallPanel(); initPivot(); renderAlerts();
-}
-
-function switchTab(t){
-  document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
-  document.querySelectorAll('.panel').forEach(x=>x.classList.remove('active'));
-  document.querySelector(`.tab[onclick*="'${t}'"]`).classList.add('active');
-  document.getElementById(`panel-${t}`).classList.add('active');
-  if(t==='byCity'||t==='small') setTimeout(()=>window.dispatchEvent(new Event('resize')),150);
-}
-
-// ====== 总览 ======
 function renderOverview(){
-  const g = D.grand_total;
-  document.getElementById('kpiRow').innerHTML = [
-    {l:'全年总收入', v:g.income+'万', s:'约'+(g.income/10000).toFixed(2)+'亿元'},
-    {l:'增值税', v:g.vat+'万'},
-    {l:'附加税', v:g.surtax+'万'},
-    {l:'企业所得税', v:g.cit+'万'},
-    {l:'个税', v:g.iit+'万'},
-    {l:'印花税', v:g.stamp+'万'},
-    {l:'文建费', v:g.cultural+'万'},
-    {l:'税费合计', v:g.tax+'万'},
-    {l:'综合税负率', v:g.rate+'%'},
-    {l:'公司总数', v:D.companies.length+'家'}
-  ].map(k=>`<div class="kpi-card"><div class="lbl">${k.l}</div><div class="val" style="font-size:20px">${k.v}</div><div class="sub">${k.s||''}</div></div>`).join('');
-
-  const m = M.map(mm=>D.monthly[mm]||{inc26:0,inc25:0});
+  const g=D.grand_total;
+  document.getElementById('kpiRow').innerHTML=[
+    {l:'全年总收入',v:fm(g.income)},{l:'增值税',v:fm(g.vat)},{l:'附加税',v:fm(g.surtax)},{l:'企业所得税',v:fm(g.cit)},
+    {l:'个税',v:fm(g.iit)},{l:'印花税',v:fm(g.stamp)},{l:'文建费',v:fm(g.cultural)},{l:'税费合计',v:fm(g.tax)},
+    {l:'综合税负率',v:g.rate+'%'},{l:'公司数',v:D.companies.length+'家'}].map(k=>`<div class="kpi-card"><div class="lbl">${k.l}</div><div class="val" style="font-size:15px">${k.v}</div></div>`).join('');
+  const mm=M.map(m=>D.monthly[m]||{inc26:0,inc25:0});
   echarts.init(document.getElementById('chartTrend')).setOption({
-    tooltip:{trigger:'axis'},legend:{data:['2026收入','2025收入']},grid:{left:'6%',right:'4%',bottom:'10%'},
-    xAxis:{type:'category',data:M},yAxis:{type:'value',name:'万元'},
-    series:[{name:'2026收入',type:'bar',data:m.map(x=>x.inc26),itemStyle:{color:'#000'}},
-            {name:'2025收入',type:'line',data:m.map(x=>x.inc25),lineStyle:{color:'#cc0',width:2},itemStyle:{color:'#cc0'}}]
-  });
-  const cs = D.cities;
+    tooltip:{trigger:'axis',formatter:p=>p.map(x=>x.seriesName+': '+fm(x.value)+'元').join('<br/>')},
+    legend:{data:['2026收入','2025收入']},grid:{left:'8%',right:'4%',bottom:'10%'},
+    xAxis:{type:'category',data:M},yAxis:{type:'value',name:'元',axisLabel:{formatter:v=>v>=100000000?(v/100000000).toFixed(1)+'亿':v>=10000?(v/10000).toFixed(0)+'万':v}},
+    series:[{name:'2026收入',type:'bar',data:mm.map(x=>x.inc26),itemStyle:{color:'#000'}},
+            {name:'2025收入',type:'line',data:mm.map(x=>x.inc25),lineStyle:{color:'#cc0',width:2},itemStyle:{color:'#cc0'}}]});
+  const cs=D.cities;
   echarts.init(document.getElementById('chartCity')).setOption({
-    tooltip:{trigger:'axis'},legend:{data:['收入','税费']},grid:{left:'8%',right:'4%',bottom:'12%'},
+    tooltip:{trigger:'axis',formatter:p=>p.map(x=>x.seriesName+': '+fm(x.value)+'元').join('<br/>')},
+    legend:{data:['收入','税费']},grid:{left:'8%',right:'4%',bottom:'12%'},
     xAxis:{type:'category',data:cs.map(c=>c.name),axisLabel:{rotate:25}},
-    yAxis:{type:'value',name:'万元'},
+    yAxis:{type:'value',name:'元',axisLabel:{formatter:v=>v>=100000000?(v/100000000).toFixed(1)+'亿':(v/10000).toFixed(0)+'万'}},
     series:[{name:'收入',type:'bar',data:cs.map(c=>c.income),itemStyle:{color:'#000'}},
-            {name:'税费',type:'bar',data:cs.map(c=>c.total_tax),itemStyle:{color:'#c00'}}]
-  });
-  const srt = [...cs].sort((a,b)=>b.total_rate-a.total_rate);
+            {name:'税费',type:'bar',data:cs.map(c=>c.total_tax),itemStyle:{color:'#c00'}}]});
+  const srt=[...cs].sort((a,b)=>b.total_rate-a.total_rate);
   echarts.init(document.getElementById('chartRate')).setOption({
-    tooltip:{trigger:'axis'},grid:{left:'8%',right:'4%',bottom:'12%'},
+    tooltip:{trigger:'axis'},grid:{left:'6%',right:'4%',bottom:'12%'},
     xAxis:{type:'category',data:srt.map(c=>c.name),axisLabel:{rotate:25}},
     yAxis:{type:'value',name:'%',axisLabel:{formatter:'{value}%'}},
-    series:[{name:'综合税负',type:'bar',data:srt.map(c=>c.total_rate),
-             itemStyle:{color:p=>p.value>3?'#c00':'#000'}}]
-  });
-}
+    series:[{name:'综合税负',type:'bar',data:srt.map(c=>c.total_rate),itemStyle:{color:p=>p.value>3?'#c00':'#000'}}]});}
 
 // ====== 按城市 ======
 function renderCityPanel(){
-  const cs = D.cities;
-  document.getElementById('cityKpiRow').innerHTML = cs.map(c=>`<div class="kpi-card" style="cursor:pointer" onclick="showCityMonth('${c.name}')">
-    <div class="lbl">${c.name}</div><div class="val" style="font-size:18px">${c.income}万</div><div class="sub">税费${c.total_tax}万 / 税负${c.total_rate}%</div></div>`).join('');
-  let h = '<table class="data-table"><tr><th>城市</th><th>公司数</th><th>收入(万)</th><th>增值税</th><th>附加税</th><th>企业所得税</th><th>个税</th><th>印花税</th><th>文建费</th><th>税费合计</th><th>增值税税负</th><th>综合税负率</th><th>操作</th></tr>';
-  cs.forEach(c=>{
-    const cnt = D.companies.filter(x=>x.city===c.name).length;
-    h += `<tr><td><b>${c.name}</b></td><td>${cnt}</td><td>${c.income.toFixed(2)}</td>`;
-    h += `<td>${c.vat.toFixed(2)}</td><td>${c.surtax.toFixed(2)}</td><td>${c.cit.toFixed(2)}</td>`;
-    h += `<td>${c.iit.toFixed(2)}</td><td>${c.stamp.toFixed(2)}</td><td>${c.cultural.toFixed(2)}</td>`;
-    h += `<td>${c.total_tax.toFixed(2)}</td><td>${c.vat_rate.toFixed(4)}%</td><td>${c.total_rate.toFixed(4)}%</td>`;
-    h += `<td><span class="clickable" onclick="showCityMonth('${c.name}')">月度趋势</span></td></tr>`;
-  });
-  document.getElementById('cityTable').innerHTML = h;
-  showCityMonth('上海');
-}
-function showCityMonth(city){
-  document.getElementById('cityDetailTitle').textContent = city+' 月度收入趋势';
-  const d = D.city_monthly[city]||{};
-  const v = M.map(m=>d[m]||0);
-  echarts.init(document.getElementById('chartCityMonth')).setOption({
-    tooltip:{trigger:'axis'},grid:{left:'6%',right:'4%',bottom:'10%'},
-    xAxis:{type:'category',data:M},yAxis:{type:'value',name:'万元'},
-    series:[{name:city+'收入',type:'line',data:v,lineStyle:{color:'#000',width:3},areaStyle:{color:'rgba(0,0,0,0.08)'}}]
-  });
-  switchTab('byCity');
-}
+  const cs=D.cities;
+  document.getElementById('cityKpiRow').innerHTML=cs.map(c=>`<div class="kpi-card" style="cursor:pointer" onclick="showCityCompanies('${c.name}')">
+    <div class="lbl">${c.name}</div><div class="val" style="font-size:15px">${fm(c.income)}</div><div class="sub">税费${fm(c.total_tax)} / 税负${c.total_rate}%</div></div>`).join('');
+  let h='<table class="data-table"><tr><th>城市</th><th>公司数</th><th>收入</th><th>增值税</th><th>附加税</th><th>企业所得税</th><th>个税</th><th>印花税</th><th>文建费</th><th>税费合计</th><th>增值税税负</th><th>综合税负率</th><th>操作</th></tr>';
+  cs.forEach(c=>{const cnt=D.companies.filter(x=>x.city===c.name).length;
+    h+=`<tr><td><b>${c.name}</b></td><td>${cnt}</td><td>${fm(c.income)}</td><td>${fm(c.vat)}</td><td>${fm(c.surtax)}</td>
+    <td>${fm(c.cit)}</td><td>${fm(c.iit)}</td><td>${fm(c.stamp)}</td><td>${fm(c.cultural)}</td>
+    <td>${fm(c.total_tax)}</td><td>${c.vat_rate.toFixed(4)}%</td><td>${c.total_rate.toFixed(4)}%</td>
+    <td><span class="clickable" onclick="showCityCompanies('${c.name}')">查看公司</span></td></tr>`;});
+  document.getElementById('cityTable').innerHTML=h;}
+
+function showCityCompanies(city){
+  document.getElementById('cityCompanyCard').style.display='block';
+  document.getElementById('cityCompanyTitle').textContent=city+' - 各公司明细';
+  const list=D.companies.filter(c=>c.city===city);
+  let h=`<table class="data-table"><tr><th>公司名称</th><th>纳税人性质</th><th>收入</th><th>增值税</th><th>附加税</th><th>企业所得税</th><th>个税</th><th>印花税</th><th>文建费</th><th>税费合计</th><th>增值税税负</th><th>综合税负率</th></tr>`;
+  list.forEach(c=>{h+=`<tr><td>${c.name}</td><td>${c.nature}</td><td>${fm(c.income)}</td><td>${fm(c.vat)}</td><td>${fm(c.surtax)}</td>
+    <td>${fm(c.cit)}</td><td>${fm(c.iit)}</td><td>${fm(c.stamp)}</td><td>${fm(c.cultural)}</td>
+    <td>${fm(c.total_tax)}</td><td>${c.vat_rate.toFixed(4)}%</td><td>${c.total_rate.toFixed(4)}%</td></tr>`;});
+  document.getElementById('cityCompanyTable').innerHTML=h;
+  switchTab('byCity');}
 
 // ====== 按公司 ======
-function renderCompanyPanel(){
-  const cities = [...new Set(D.companies.map(c=>c.city))];
-  document.getElementById('cityFilter').innerHTML = '<option value="">全部城市</option>'+cities.map(c=>`<option value="${c}">${c}</option>`).join('');
-  renderCompany();
-}
+function renderCompanyPanel(){const cs=[...new Set(D.companies.map(c=>c.city))];
+  document.getElementById('cityFilter').innerHTML='<option value="">全部城市</option>'+cs.map(c=>`<option value="${c}">${c}</option>`).join('');renderCompany();}
 function renderCompany(){
-  const q = (document.getElementById('companySearch').value||'').toLowerCase();
-  const cf = document.getElementById('cityFilter').value;
-  const sf = document.getElementById('sortBy').value;
-  const nf = document.getElementById('natureFilter').value;
-  let list = D.companies.filter(c=>{
-    if(cf&&c.city!==cf) return false; if(q&&!c.name.toLowerCase().includes(q)) return false;
-    if(nf&&!c.nature.includes(nf)) return false; return true;
-  });
-  if(sf==='income') list.sort((a,b)=>b.income-a.income);
-  else if(sf==='rate') list.sort((a,b)=>b.total_rate-a.total_rate);
-  else list.sort((a,b)=>a.name.localeCompare(b.name));
-  let h = '<table class="data-table"><tr><th>公司名称</th><th>城市</th><th>纳税人性质</th><th>收入(万)</th><th>增值税(万)</th><th>税费合计(万)</th><th>增值税税负</th><th>综合税负率</th><th>操作</th></tr>';
-  list.forEach(c=>{
-    const al = D.alerts[c.name];
-    h += `<tr class="${al?'highlight':''}"><td>${al?'⚠️ ':''}${c.name}</td><td>${c.city}</td><td>${c.nature}</td>
-      <td>${c.income.toFixed(2)}</td><td>${c.vat.toFixed(2)}</td><td>${c.total_tax.toFixed(2)}</td>
-      <td>${c.vat_rate.toFixed(4)}%</td><td>${c.total_rate.toFixed(4)}%</td>
-      <td><span class="clickable" onclick="showModal('${c.name.replace(/'/g,"\\'")}')">月度</span></td></tr>`;
-  });
-  document.getElementById('companyTable').innerHTML = h;
-}
-function showModal(name){
-  document.getElementById('modalTitle').textContent = name+' - 月度明细';
-  const md = D.company_monthly[name]||{};
-  let h = '<table class="data-table"><tr><th>月份</th><th>收入(万)</th><th>增值税(万)</th><th>增值税税负</th></tr>';
-  M.forEach(m=>{
-    const d = md[m]||{inc:0,vat:0}; const vr = d.inc>0?(d.vat/d.inc*100).toFixed(4):'0.0000';
-    h += `<tr><td>${m}</td><td>${d.inc.toFixed(2)}</td><td>${d.vat.toFixed(2)}</td><td>${vr}%</td></tr>`;
-  });
-  h += '</table>';
-  document.getElementById('modalBody').innerHTML = h;
-  document.getElementById('companyModal').classList.add('show');
-}
+  const q=(document.getElementById('companySearch').value||'').toLowerCase(),cf=document.getElementById('cityFilter').value,
+    sf=document.getElementById('sortBy').value,nf=document.getElementById('natureFilter').value;
+  let list=D.companies.filter(c=>{if(cf&&c.city!==cf)return false;if(q&&!c.name.toLowerCase().includes(q))return false;if(nf&&!c.nature.includes(nf))return false;return true;});
+  if(sf==='income')list.sort((a,b)=>b.income-a.income);else if(sf==='rate')list.sort((a,b)=>b.total_rate-a.total_rate);else list.sort((a,b)=>a.name.localeCompare(b.name));
+  let h='<table class="data-table"><tr><th>公司名称</th><th>城市</th><th>性质</th><th>收入</th><th>增值税</th><th>税费合计</th><th>增值税税负</th><th>综合税负率</th><th>操作</th></tr>';
+  list.forEach(c=>{const al=D.alerts[c.name];
+    h+=`<tr><td>${al?'! ':''}${c.name}</td><td>${c.city}</td><td>${c.nature}</td><td>${fm(c.income)}</td>
+    <td>${fm(c.vat)}</td><td>${fm(c.total_tax)}</td><td>${c.vat_rate.toFixed(4)}%</td><td>${c.total_rate.toFixed(4)}%</td>
+    <td><span class="clickable" onclick="showModal('${c.name.replace(/'/g,"\\'")}')">月度</span></td></tr>`;});
+  document.getElementById('companyTable').innerHTML=h;}
+function showModal(n){document.getElementById('modalTitle').textContent=n+' 月度明细';
+  const md=D.company_monthly[n]||{};let h='<table class="data-table"><tr><th>月份</th><th>收入</th><th>增值税</th><th>增值税税负</th></tr>';
+  M.forEach(m=>{const d=md[m]||{inc:0,vat:0};const vr=d.inc>0?(d.vat/d.inc*100).toFixed(4):'0.0000';
+    h+=`<tr><td>${m}</td><td>${fm(d.inc)}</td><td>${fm(d.vat)}</td><td>${vr}%</td></tr>`;});h+='</table>';
+  document.getElementById('modalBody').innerHTML=h;document.getElementById('companyModal').classList.add('show');}
 function closeModal(){document.getElementById('companyModal').classList.remove('show');}
-document.getElementById('companyModal').onclick = e=>{if(e.target===e.currentTarget)closeModal();};
+document.getElementById('companyModal').onclick=e=>{if(e.target===e.currentTarget)closeModal();};
 
-// ====== 小规模纳税人 ======
+// ====== 小规模 ======
 function renderSmallPanel(){
-  const st = D.small_taxpayer;
-  document.getElementById('smallKpiRow').innerHTML = [
-    {l:'小规模纳税人', v:st.small_count+'家', c:'small-bg'}, {l:'小规模收入', v:st.small_income+'万', c:'small-bg'},
-    {l:'小规模税费', v:st.small_tax+'万', c:'small-bg'}, {l:'小规模税负率', v:st.small_rate+'%', c:'small-bg'},
-    {l:'一般纳税人', v:st.general_count+'家', c:'general-bg'}, {l:'一般纳税人收入', v:st.general_income+'万', c:'general-bg'},
-    {l:'一般纳税人税费', v:st.general_tax+'万', c:'general-bg'}, {l:'一般纳税人税负率', v:st.general_rate+'%', c:'general-bg'}
-  ].map(k=>`<div class="kpi-card ${k.c}"><div class="lbl">${k.l}</div><div class="val" style="font-size:18px">${k.v}</div></div>`).join('');
-
-  // 税负对比图
+  const st=D.small_taxpayer;
+  document.getElementById('smallKpiRow').innerHTML=[
+    {l:'小规模纳税人',v:st.small_count+'家'},{l:'小规模收入',v:fm(st.small_income)},{l:'小规模税费',v:fm(st.small_tax)},
+    {l:'小规模税负率',v:st.small_rate+'%'},{l:'一般纳税人',v:st.general_count+'家'},
+    {l:'一般纳税人收入',v:fm(st.general_income)},{l:'一般纳税人税费',v:fm(st.general_tax)},{l:'一般纳税人税负率',v:st.general_rate+'%'}]
+    .map(k=>`<div class="kpi-card"><div class="lbl">${k.l}</div><div class="val" style="font-size:14px">${k.v}</div></div>`).join('');
   echarts.init(document.getElementById('chartSmallCompare')).setOption({
-    tooltip:{trigger:'axis'},grid:{left:'8%',right:'4%',bottom:'10%'},
-    xAxis:{type:'category',data:['小规模纳税人','一般纳税人']},
-    yAxis:{type:'value',name:'%'},
-    series:[
-      {name:'综合税负率',type:'bar',data:[st.small_rate,st.general_rate],itemStyle:{color:p=>p.dataIndex===0?'#000':'#c00'},barWidth:60}
-    ]
-  });
-
-  // 城市分布
-  const bc = Object.entries(st.by_city);
+    tooltip:{trigger:'axis'},grid:{left:'6%',right:'4%',bottom:'10%'},
+    xAxis:{type:'category',data:['小规模','一般纳税人']},yAxis:{type:'value',name:'%'},
+    series:[{name:'综合税负率',type:'bar',data:[st.small_rate,st.general_rate],itemStyle:{color:p=>p.dataIndex===0?'#000':'#c00'},barWidth:60}]});
+  const bc=Object.entries(st.by_city);
   echarts.init(document.getElementById('chartSmallCity')).setOption({
-    tooltip:{trigger:'axis'},legend:{data:['家数','收入(万)']},grid:{left:'8%',right:'4%',bottom:'12%'},
+    tooltip:{trigger:'axis'},legend:{data:['家数','收入']},grid:{left:'6%',right:'4%',bottom:'12%'},
     xAxis:{type:'category',data:bc.map(x=>x[0]),axisLabel:{rotate:25}},
-    yAxis:[{type:'value',name:'家数'},{type:'value',name:'万元'}],
-    series:[
-      {name:'家数',type:'bar',data:bc.map(x=>x[1].count),itemStyle:{color:'#000'}},
-          {name:'收入(万)',type:'line',yAxisIndex:1,data:bc.map(x=>x[1].income),lineStyle:{color:'#c00',width:2},itemStyle:{color:'#c00'}}
-    ]
-  });
-  renderSmallDetail();
-}
+    yAxis:[{type:'value',name:'家数'},{type:'value',name:'元'}],
+    series:[{name:'家数',type:'bar',data:bc.map(x=>x[1].count),itemStyle:{color:'#000'}},
+            {name:'收入',type:'line',yAxisIndex:1,data:bc.map(x=>x[1].income),lineStyle:{color:'#c00',width:2},itemStyle:{color:'#c00'}}]});renderSmallDetail();}
+
 function renderSmallDetail(){
-  const q = (document.getElementById('smallSearch').value||'').toLowerCase();
-  const list = D.small_taxpayer.detail.filter(c=>!q||c.name.toLowerCase().includes(q));
-  let h = '<table class="data-table"><tr><th>公司名称</th><th>城市</th><th>收入(万)</th><th>增值税(万)</th><th>税费(万)</th><th>滚动12月收入(万)</th><th>年化收入(万)</th><th>预警</th><th>状态</th></tr>';
-  list.forEach(c=>{
-    const warnStyle = c.warn_500 ? 'style="background:#fee;font-weight:bold;color:#c00"' : '';
-    h += `<tr><td>${c.name}</td><td>${c.city}</td><td>${c.income.toFixed(2)}</td><td>${c.vat.toFixed(2)}</td>
-      <td>${c.tax.toFixed(2)}</td>
-      <td ${warnStyle}>${c.rolling_12m.toFixed(0)}</td>
-      <td>${c.annualized.toFixed(0)}</td>
-      <td>${c.warn_500?'!超500万':''}</td>
-      <td>${c.warn_text||'正常'}</td></tr>`;
-  });
-  document.getElementById('smallTable').innerHTML = h;
-}
+  const q=(document.getElementById('smallSearch').value||'').toLowerCase();
+  const list=D.small_taxpayer.detail.filter(c=>!q||c.name.toLowerCase().includes(q));
+  let h='<table class="data-table"><tr><th>公司名称</th><th>城市</th><th>收入</th><th>增值税</th><th>税费</th><th>滚动12月收入</th><th>年化收入</th><th>预警</th></tr>';
+  list.forEach(c=>{const ws=c.warn_500?'style="background:#fee;font-weight:bold;color:#c00"':'';
+    h+=`<tr><td>${c.name}</td><td>${c.city}</td><td>${fm(c.income)}</td><td>${fm(c.vat)}</td><td>${fm(c.tax)}</td>
+    <td ${ws}>${fm(c.rolling_12m)}</td><td>${fm(c.annualized)}</td><td>${c.warn_text||'正常'}</td></tr>`;});
+  document.getElementById('smallTable').innerHTML=h;}
 
-// ====== 数据透视表 ======
+// ====== 数据透视 ======
 function renderPivot(){
-  const rowDim = document.getElementById('pivotRow').value;
-  const colDim = document.getElementById('pivotCol').value;
-  const valField = document.getElementById('pivotVal').value;
-  const cityFilter = document.getElementById('pivotCity').value;
-  const natureFilter = document.getElementById('pivotNature').value;
-  const doSort = document.getElementById('pivotSort').checked;
+  const rd=document.getElementById('pivotRow').value,cd=document.getElementById('pivotCol').value,
+    vf=document.getElementById('pivotVal').value,cf=document.getElementById('pivotCity').value,
+    nf=document.getElementById('pivotNature').value,ds=document.getElementById('pivotSort').checked;
+  let list=D.companies;if(cf)list=list.filter(c=>c.city===cf);if(nf)list=list.filter(c=>c.nature.includes(nf));
+  const rg={};list.forEach(c=>{const k=rd==='city'?c.city:rd==='nature'?c.nature:c.name;if(!rg[k])rg[k]=[];rg[k].push(c);});
+  const cols=cd==='total'?['全年合计']:M;
+  function agg(cos,f,m){if(m&&m!=='全年合计'){let t=0;cos.forEach(c=>{const md=D.company_monthly[c.name];if(md&&md[m])t+=md[m][f]||0;});return Math.round(t);}
+    if(f==='income')return Math.round(cos.reduce((s,c)=>s+c.income,0));if(f==='vat')return Math.round(cos.reduce((s,c)=>s+c.vat,0));
+    if(f==='total_tax')return Math.round(cos.reduce((s,c)=>s+c.total_tax,0));
+    if(f==='vat_rate'){const ti=cos.reduce((s,c)=>s+c.income,0),tv=cos.reduce((s,c)=>s+c.vat,0);return ti>0?Math.round(tv/ti*10000)/100:0;}
+    if(f==='total_rate'){const ti=cos.reduce((s,c)=>s+c.income,0),tt=cos.reduce((s,c)=>s+c.total_tax,0);return ti>0?Math.round(tt/ti*10000)/100:0;}return 0;}
+  const isPct=vf==='vat_rate'||vf==='total_rate',gt=agg(list,vf,'全年合计'),gbm={};
+  if(!isPct)cols.forEach(m=>{gbm[m]=agg(list,vf,m);});
+  let rows=Object.entries(rg);if(ds&&!isPct){const tf=cd==='total'?'全年合计':cols[0];rows.sort((a,b)=>agg(b[1],vf,tf)-agg(a[1],vf,tf));}
+  let h='<table class="data-table"><tr><th>'+(rd==='city'?'城市':rd==='nature'?'纳税人性质':'公司')+'</th>';
+  cols.forEach(m=>{h+='<th>'+m+'</th>';});h+='<th>占比</th></tr>';
+  rows.forEach(([k,cos])=>{h+='<tr><td><b>'+k+'</b></td>';
+    cols.forEach(m=>{const v=agg(cos,vf,m);let pct='';if(!isPct&&gbm[m]&&gbm[m]>0)pct=(v/gbm[m]*100).toFixed(1)+'%';
+      h+='<td>'+(isPct?v.toFixed(4)+'%':fm(v))+'<br><span style="font-size:9px;color:#999">'+pct+'</span></td>';});
+    const rt=agg(cos,vf,'全年合计');h+='<td>'+(gt>0&&!isPct?(rt/gt*100).toFixed(1)+'%':'')+'</td></tr>';});
+  h+='<tr style="background:#eee;font-weight:bold"><td>合计</td>';cols.forEach(m=>{h+='<td>'+(isPct?agg(list,vf,m).toFixed(4)+'%':fm(agg(list,vf,m)))+'</td>';});
+  h+='<td>100%</td></tr></table>';
+  document.getElementById('pivotTable').innerHTML=h;
+  const cnt=list.length,ti=list.reduce((s,c)=>s+c.income,0),tt=list.reduce((s,c)=>s+c.total_tax,0);
+  document.getElementById('pivotSummary').textContent='共'+cnt+'家公司 | 收入'+fm(ti)+'元 | 税费'+fm(tt)+'元 | 税负率'+(ti>0?(tt/ti*100).toFixed(4):'0')+'%';}
+function initPivot(){const cs=[...new Set(D.companies.map(c=>c.city))];
+  document.getElementById('pivotCity').innerHTML='<option value="">全部城市</option>'+cs.map(c=>`<option value="${c}">${c}</option>`).join('');renderPivot();}
 
-  // Filter companies
-  let list = D.companies;
-  if(cityFilter) list = list.filter(c=>c.city===cityFilter);
-  if(natureFilter) list = list.filter(c=>c.nature.includes(natureFilter));
-
-  // Build row groups
-  const rowGroups = {};
-  list.forEach(c=>{
-    let key;
-    if(rowDim==='city') key = c.city;
-    else if(rowDim==='nature') key = c.nature;
-    else key = c.name; // company
-    if(!rowGroups[key]) rowGroups[key] = [];
-    rowGroups[key].push(c);
-  });
-
-  // Columns
-  let columns = colDim==='month' ? M : ['全年合计'];
-  if(colDim==='total') columns = ['全年合计'];
-  if(colDim==='month') columns = M;
-
-  // Aggregate function
-  function agg(companies, field, month){
-    if(month && month!=='全年合计'){
-      let total = 0;
-      companies.forEach(c=>{
-        const md = D.company_monthly[c.name];
-        if(md && md[month]) total += md[month][field] || 0;
-      });
-      if(field==='vat_rate') return companies.length>0 ? (companies.reduce((s,c)=>s+c.income,0)>0 ? round2(companies.reduce((s,c)=>{
-        const md = D.company_monthly[c.name];
-        const inc = (md&&md[month]&&md[month].inc)||0;
-        const vat = (md&&md[month]&&md[month].vat)||0;
-        return s + (inc>0?vat/inc:0);
-      },0)/companies.length*100,4) : 0) : 0;
-      if(field==='total_rate') return 0;
-      return round2(total,2);
-    }
-    // Annual total
-    if(field==='income') return round2(companies.reduce((s,c)=>s+c.income,0),2);
-    if(field==='vat') return round2(companies.reduce((s,c)=>s+c.vat,0),2);
-    if(field==='total_tax') return round2(companies.reduce((s,c)=>s+c.total_tax,0),2);
-    if(field==='vat_rate'){
-      const ti = companies.reduce((s,c)=>s+c.income,0);
-      const tv = companies.reduce((s,c)=>s+c.vat,0);
-      return ti>0 ? round2(tv/ti*100,4) : 0;
-    }
-    if(field==='total_rate'){
-      const ti = companies.reduce((s,c)=>s+c.income,0);
-      const tt = companies.reduce((s,c)=>s+c.total_tax,0);
-      return ti>0 ? round2(tt/ti*100,4) : 0;
-    }
-    return 0;
-  }
-
-  function round2(v,d){const m=Math.pow(10,d||2);return Math.round(v*m)/m;}
-
-  // Build table
-  const isPct = valField==='vat_rate'||valField==='total_rate';
-  let html = '<table class="data-table"><tr><th>'+(rowDim==='city'?'城市':rowDim==='nature'?'纳税人性质':'公司')+'</th>';
-  columns.forEach(m=>{html+='<th>'+m+'</th>';});
-  html += '<th>占比</th></tr>';
-
-  // Total for percentage calc
-  const grandTotal = agg(list, valField, colDim==='total'?'全年合计':null);
-  const grandByMonth = {};
-  if(!isPct){
-    columns.forEach(m=>{grandByMonth[m]=agg(list,valField,m);});
-  }
-
-  let rows = Object.entries(rowGroups);
-  if(doSort && !isPct){
-    const totField = colDim==='total' ? '全年合计' : columns[0];
-    rows.sort((a,b)=>{
-      const va = agg(a[1],valField,totField);
-      const vb = agg(b[1],valField,totField);
-      return vb - va;
-    });
-  }
-
-  rows.forEach(([key,cos])=>{
-    html += '<tr><td><b>'+key+'</b></td>';
-    columns.forEach(m=>{
-      const val = agg(cos,valField,m);
-      let pct = '';
-      if(!isPct && grandByMonth[m] && grandByMonth[m]>0){
-        pct = (val/grandByMonth[m]*100).toFixed(1)+'%';
-      }
-      html += '<td>'+(isPct?val.toFixed(4)+'%':val.toFixed(2))+'<br><span style="font-size:10px;color:#999">'+pct+'</span></td>';
-    });
-    // 占比列（行合计占全体的比重）
-    const rowTotal = agg(cos,valField,colDim==='total'?'全年合计':null);
-    const pctRow = grandTotal>0 && !isPct ? (rowTotal/grandTotal*100).toFixed(1)+'%' : '';
-    html += '<td>'+pctRow+'</td></tr>';
-  });
-
-  // Grand total row
-  html += '<tr style="background:#eee;font-weight:bold"><td>合计</td>';
-  columns.forEach(m=>{
-    const val = agg(list,valField,m);
-    html += '<td>'+(isPct?val.toFixed(4)+'%':val.toFixed(2))+'</td>';
-  });
-  html += '<td>100%</td></tr>';
-  html += '</table>';
-
-  document.getElementById('pivotTable').innerHTML = html;
-
-  // Summary
-  const count = list.length;
-  const totalInc = list.reduce((s,c)=>s+c.income,0);
-  const totalTax = list.reduce((s,c)=>s+c.total_tax,0);
-  document.getElementById('pivotSummary').textContent =
-    '共 '+count+' 家公司 | 总收入 '+totalInc.toFixed(2)+'万 | 税费合计 '+totalTax.toFixed(2)+'万 | 综合税负率 '+(totalInc>0?(totalTax/totalInc*100).toFixed(4):'0')+'%';
-}
-
-// Init pivot city filter
-function initPivot(){
-  const cities = [...new Set(D.companies.map(c=>c.city))];
-  const sel = document.getElementById('pivotCity');
-  sel.innerHTML = '<option value="">全部城市</option>'+cities.map(c=>`<option value="${c}">${c}</option>`).join('');
-  renderPivot();
-}
-
-// ====== 预警列表 ======
-function renderAlerts(){
-  const q = (document.getElementById('alertSearch').value||'').toLowerCase();
-  const list = Object.entries(D.alerts).filter(([n])=>!q||n.toLowerCase().includes(q));
-  let h = '<div class="alert-head"><span>公司名称</span><span>纳税人性质</span><span>异常次数</span><span>异常说明</span><span>异常月份</span></div>';
-  list.forEach(([n,info])=>{
-    const c = D.companies.find(x=>x.name===n);
-    const nature = c?c.nature:'';
-    const clr = info.count>=4?'badge-red':info.count>=2?'badge-orange':'badge-yellow';
-    h += `<div class="alert-row" onclick="showModal('${n.replace(/'/g,"\\'")}')">
-      <span><b>${n}</b></span><span>${nature}</span>
-      <span><span class="badge ${clr}">${info.count}次</span></span>
-      <span>${info.details.join('; ')||'-'}</span><span>${info.months.join(', ')}</span></div>`;
-  });
-  document.getElementById('alertList').innerHTML = h||'<div style="padding:20px;text-align:center;color:#999">无匹配结果</div>';
-}
+// ====== 预警 ======
+function renderAlerts(){const q=(document.getElementById('alertSearch').value||'').toLowerCase();
+  const list=Object.entries(D.alerts).filter(([n])=>!q||n.toLowerCase().includes(q));
+  let h='';list.forEach(([n,info])=>{const c=D.companies.find(x=>x.name===n),nature=c?c.nature:'';
+    const clr=info.count>=4?'badge-red':'badge-yellow';
+    h+=`<div class="alert-row" onclick="showModal('${n.replace(/'/g,"\\'")}')"><span><b>${n}</b></span><span>${nature}</span>
+    <span><span class="badge ${clr}">${info.count}次</span></span><span>${info.details.join('; ')||'-'}</span><span>${info.months.join(', ')}</span></div>`;});
+  document.getElementById('alertList').innerHTML=h||'<div style="padding:20px;text-align:center">无</div>';}
 init();
-</script>
-</body>
-</html>
+</script></body></html>
