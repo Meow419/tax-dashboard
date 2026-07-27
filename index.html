@@ -2,6 +2,7 @@
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>2026年税费分析看板</title>
 <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+<script>window.echarts||document.write('<script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.5.0/echarts.min.js"><\/script>');</script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Microsoft YaHei','宋体',sans-serif}
 body{background:#fff;padding:20px;min-height:100vh;color:#000}
@@ -127,10 +128,13 @@ function ech(id){if(typeof echarts==='undefined')return null;return echarts.init
 function getCityFilter(){return Array.from(window._cityFilter||[]);}
 function getNatureFilter(){return Array.from(window._natureFilter||[]);}
 async function init(){try{
+  document.getElementById('panel-overview').innerHTML='<div style="padding:40px;text-align:center;color:#666">加载中...</div>';
   const r=await fetch('data.json?v=20260724');D=await r.json();
+  console.log('Data loaded:',D.grand_total.income);
   document.getElementById('updateTime').textContent='数据更新：2026-07-23';
   renderOverview();renderCityPanel();renderCompanyPanel();renderSmallPanel();initPivot();renderAlerts();
-}catch(e){document.getElementById('panel-overview').innerHTML='<div style="padding:40px;text-align:center;color:#c00">数据加载失败：'+e.message+'<br><small>请刷新重试</small></div>';}}
+  console.log('All panels rendered:',typeof echarts);
+}catch(e){console.error(e);document.getElementById('panel-overview').innerHTML='<div style="padding:40px;text-align:center;color:#c00">数据加载失败：'+e.message+'</div>';}}
 function switchTab(t){document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));document.querySelectorAll('.panel').forEach(x=>x.classList.remove('active'));
   document.querySelector(`.tab[onclick*="'${t}'"]`).classList.add('active');document.getElementById(`panel-${t}`).classList.add('active');
   if(t==='byCity'||t==='small') setTimeout(()=>window.dispatchEvent(new Event('resize')),150);}
