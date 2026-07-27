@@ -2,7 +2,6 @@
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>2026年税费分析看板</title>
 <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
-<script>window.echarts||document.write('<script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.5.0/echarts.min.js"><\/script>');</script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Microsoft YaHei','宋体',sans-serif}
 body{background:#fff;padding:20px;min-height:100vh;color:#000}
@@ -3506,14 +3505,14 @@ function renderOverview(){
     {l:'个税',v:fm(g.iit)},{l:'印花税',v:fm(g.stamp)},{l:'文建费',v:fm(g.cultural)},{l:'税费合计',v:fm(g.tax)},
     {l:'综合税负率',v:g.rate+'%'},{l:'公司数',v:D.companies.length+'家'}].map(k=>`<div class="kpi-card"><div class="lbl">${k.l}</div><div class="val" style="font-size:15px">${k.v}</div></div>`).join('');
   const mm=M.map(m=>D.monthly[m]||{inc26:0,inc25:0});
-  echarts.init(document.getElementById('chartTrend')).setOption({
+  (typeof echarts!=='undefined' ? echarts.init(document.getElementById('chartTrend')).setOption : function(){return null})({
     tooltip:{trigger:'axis',formatter:p=>p.map(x=>x.seriesName+': '+fm(x.value)+'元').join('<br/>')},
     legend:{data:['2026收入','2025收入']},grid:{left:'8%',right:'4%',bottom:'10%'},
     xAxis:{type:'category',data:M},yAxis:{type:'value',name:'元',axisLabel:{formatter:v=>v>=100000000?(v/100000000).toFixed(1)+'亿':v>=10000?(v/10000).toFixed(0)+'万':v}},
     series:[{name:'2026收入',type:'bar',data:mm.map(x=>x.inc26),itemStyle:{color:'#000'}},
             {name:'2025收入',type:'line',data:mm.map(x=>x.inc25),lineStyle:{color:'#cc0',width:2},itemStyle:{color:'#cc0'}}]});
   const cs=D.cities;
-  echarts.init(document.getElementById('chartCity')).setOption({
+  (typeof echarts!=='undefined' ? echarts.init(document.getElementById('chartCity')).setOption : function(){return null})({
     tooltip:{trigger:'axis',formatter:p=>p.map(x=>x.seriesName+': '+fm(x.value)+'元').join('<br/>')},
     legend:{data:['收入','税费']},grid:{left:'8%',right:'4%',bottom:'12%'},
     xAxis:{type:'category',data:cs.map(c=>c.name),axisLabel:{rotate:25}},
@@ -3521,7 +3520,7 @@ function renderOverview(){
     series:[{name:'收入',type:'bar',data:cs.map(c=>c.income),itemStyle:{color:'#000'}},
             {name:'税费',type:'bar',data:cs.map(c=>c.total_tax),itemStyle:{color:'#c00'}}]});
   const srt=[...cs].sort((a,b)=>b.total_rate-a.total_rate);
-  echarts.init(document.getElementById('chartRate')).setOption({
+  (typeof echarts!=='undefined' ? echarts.init(document.getElementById('chartRate')).setOption : function(){return null})({
     tooltip:{trigger:'axis'},grid:{left:'6%',right:'4%',bottom:'12%'},
     xAxis:{type:'category',data:srt.map(c=>c.name),axisLabel:{rotate:25}},
     yAxis:{type:'value',name:'%',axisLabel:{formatter:'{value}%'}},
@@ -3641,12 +3640,12 @@ function renderSmallPanel(){
     {l:'小规模税负率',v:st.small_rate+'%'},{l:'一般纳税人',v:st.general_count+'家'},
     {l:'一般纳税人收入',v:fm(st.general_income)},{l:'一般纳税人税费',v:fm(st.general_tax)},{l:'一般纳税人税负率',v:st.general_rate+'%'}]
     .map(k=>`<div class="kpi-card"><div class="lbl">${k.l}</div><div class="val" style="font-size:14px">${k.v}</div></div>`).join('');
-  echarts.init(document.getElementById('chartSmallCompare')).setOption({
+  (typeof echarts!=='undefined' ? echarts.init(document.getElementById('chartSmallCompare')).setOption : function(){return null})({
     tooltip:{trigger:'axis'},grid:{left:'6%',right:'4%',bottom:'10%'},
     xAxis:{type:'category',data:['小规模','一般纳税人']},yAxis:{type:'value',name:'%'},
     series:[{name:'综合税负率',type:'bar',data:[st.small_rate,st.general_rate],itemStyle:{color:p=>p.dataIndex===0?'#000':'#c00'},barWidth:60}]});
   const bc=Object.entries(st.by_city);
-  echarts.init(document.getElementById('chartSmallCity')).setOption({
+  (typeof echarts!=='undefined' ? echarts.init(document.getElementById('chartSmallCity')).setOption : function(){return null})({
     tooltip:{trigger:'axis'},legend:{data:['家数','收入']},grid:{left:'6%',right:'4%',bottom:'12%'},
     xAxis:{type:'category',data:bc.map(x=>x[0]),axisLabel:{rotate:25}},
     yAxis:[{type:'value',name:'家数'},{type:'value',name:'元'}],
