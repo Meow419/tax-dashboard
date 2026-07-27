@@ -121,3 +121,6 @@ output = {
 with open(r'D:\AI分析\税费分析\2026年税费分析看板\data.json','w',encoding='utf-8') as f:
     json.dump(output,f,ensure_ascii=False,indent=2)
 print(f"OK: {len(cities)}cities {len(companies)}co {len(small_detail)}small warn={sum(1 for x in small_detail if x['warn_500'])}")
+# Auto-build self-contained HTML
+import subprocess, os
+subprocess.run(['python',os.path.join(os.path.dirname(__file__),'build.py')])
