@@ -118,6 +118,6 @@ output = {
               for n,v in sorted(alerts.items(),key=lambda x:-len(x[1]['months']))[:20]},
     'months':months_order
 }
-with open(r'D:\AI分析\BI看板\data.json','w',encoding='utf-8') as f:
+with open(r'D:\AI分析\税费分析\2026年税费分析看板\data.json','w',encoding='utf-8') as f:
     json.dump(output,f,ensure_ascii=False,indent=2)
 print(f"OK: {len(cities)}cities {len(companies)}co {len(small_detail)}small warn={sum(1 for x in small_detail if x['warn_500'])}")
